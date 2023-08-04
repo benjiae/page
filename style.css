@@ -1,5 +1,22 @@
- body {
-    background: rgb(203,166,247);
-    background: linear-gradient(90deg, rgba(203,166,247,1) 0%, rgba(30,30,46,1) 49%, rgba(137,180,250,1) 100%); 
+body, html {
+    font-family: Comic Sans MS;
+    color: #cdd6f4;
+
+    /* flan.png */
+    height: 100%;
+    background-image: url("flan.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+.flancredits{
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    font-size: 20px;
+    color: #1e1e2e;
+    -webkit-text-stroke: 1px #cdd6f4;
 }
 
