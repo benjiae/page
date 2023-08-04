@@ -1,22 +1,26 @@
 body, html {
-    font-family: Comic Sans MS;
+    font-family: 'Roboto';
+    font-weight: Bold;
     color: #cdd6f4;
 
-    /* flan.png */
+    /* background.png */
     height: 100%;
-    background-image: url("flan.png");
+    background-image: url("evening-sky.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
 }
 
-.flancredits{
-    position: absolute;
-    bottom: 8px;
-    left: 16px;
-    font-size: 20px;
-    color: #1e1e2e;
-    -webkit-text-stroke: 1px #cdd6f4;
-}
+a:link {color: #a6e3a1}
+a:visited {color: #a6e3a1}
+a:hover {color: #a6e3a1}
+a:active {color: #a6e3a1}
 
+.links-button {
+    position: absolute;
+    bottom: 0px;
+    left: 16px;
+    font-size: 18px;
+    text-decoration: none;
+}
