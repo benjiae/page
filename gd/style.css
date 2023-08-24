@@ -5,25 +5,18 @@ body, html {
 
     /* background.png */
     height: 100%;
-    background-image: url("evening-sky.png");
+    background-image: url("../evening-sky.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
 }
 
-a:link {color: #a6e3a1; text-decoration: none}
-a:visited {color: #a6e3a1; text-decoration: none}
-a:hover {color: #a6e3a1; text-decoration: none}
-a:active {color: #a6e3a1; text-decoration: none}
+a:link {color: #74c7ec; text-decoration: none}
+a:visited {color: #74c7ec; text-decoration: none}
+a:hover {color: #74c7ec; text-decoration: none}
+a:active {color: #74c7ec; text-decoration: none}
 
-.bottom {
-    position: absolute;
-    bottom: 0px;
-    left: 16px;
-    font-size: 18px;
-    text-decoration: none;
-}
 
 .box {
     width: 800px;
@@ -59,14 +52,4 @@ a:active {color: #a6e3a1; text-decoration: none}
 .topnav a.active {
     background-color: #a6e3a1;
     color: #1e1e2e;
-  }
-
-  .orange {
-    color: #fab387;
-    background: none;
-  }
-
-  .white {
-    color: #cdd6f4;
-    background: none;
   }
