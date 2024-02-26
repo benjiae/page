@@ -2,10 +2,14 @@ body, html {
     font-family: "Inter", sans-serif;
     font-weight: Bold;
     color: #cdd6f4;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
     /* ../assets/bg.png */
     height: 100%;
     background-image: url("../assets/bg.png");
+    background-repeat: no-repeat;
+    background-position: center center;
     height: 100%;
     overflow: hidden
 }
@@ -14,23 +18,32 @@ a {
   text-decoration: none
 }
 
-#title {
+.title {
   font-size: 36px;
 }
 
+#random {
+  color: #6c7086
+}
+
+#likings {
+  font-size: 20px;
+}
+
 #maintext {
-  top: 50%;
-  transform: translate(0, -50%);
-  width: 50%;
-  position: relative;
-  margin: auto;
-  top: center;
-  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
 
   background-color: rgb(30, 30, 46, 0.5);
-  border: 4px solid rgb(30, 30, 46, 0.5);
+  border: 4px solid #cdd6f4;
   border-radius: 8px;
-  text-align: center;
 }
 
 
@@ -69,4 +82,8 @@ a {
 #discord {
   font-size: 16px;
   color: #cba6f7
+}
+
+li {
+  color: rgba(0, 0, 0, 0);
 }
