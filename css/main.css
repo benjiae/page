@@ -1,0 +1,77 @@
+body, html {
+    font-family: 'Roboto';
+    font-weight: Bold;
+    color: #cdd6f4;
+
+    /* ../assets/bg.png */
+    height: 100%;
+    background-image: url("../assets/bg.png");
+    height: 100%;
+    overflow: hidden
+}
+
+a {
+  text-decoration: none
+}
+
+#title {
+  font-size: 36px;
+}
+
+#maintext {
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 50%;
+  position: relative;
+  margin: auto;
+  top: center;
+  padding: 10px;
+
+  background-color: rgb(30, 30, 46, 0.5);
+  border: 4px solid rgb(30, 30, 46, 0.5);
+  border-radius: 8px;
+  text-align: center;
+}
+
+
+#nav {
+  overflow: none;
+  color: #89dceb;
+}
+
+.link {
+  font-size: 24px;
+}
+
+#yt {
+  color: #f38ba8;
+}
+
+#twt {
+  color: #89dceb
+}
+
+#reddit {
+  color: #fab387
+}
+
+#mastodon {
+  color: #74c7ec
+}
+
+#bsky {
+  color: #89b4fa
+}
+
+#spreadsheet {
+  color: #a6e3a1
+}
+
+#github {
+  color: #9399b2
+}
+
+#discord {
+  font-size: 16px;
+  color: #cba6f7
+}
