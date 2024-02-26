@@ -1,5 +1,5 @@
 body, html {
-    font-family: 'Roboto';
+    font-family: 'Comic Sans MS';
     font-weight: Bold;
     color: #cdd6f4;
 
@@ -33,11 +33,6 @@ a {
   text-align: center;
 }
 
-
-#nav {
-  overflow: none;
-  color: #89dceb;
-}
 
 .link {
   font-size: 24px;
