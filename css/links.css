@@ -1,0 +1,31 @@
+.link {
+  font-size: 16px;
+}
+
+#yt {
+  color: #f38ba8;
+}
+
+#twt {
+  color: #89dceb
+}
+
+#reddit {
+  color: #fab387
+}
+
+#mastodon {
+  color: #74c7ec
+}
+
+#bsky {
+  color: #89b4fa
+}
+
+#spreadsheet {
+  color: #a6e3a1
+}
+
+#github {
+  color: #9399b2
+}

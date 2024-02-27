@@ -1,35 +1,59 @@
 body, html {
     font-family: "MS UI Gothic", Verdana, sans-serif;
     src: url('../assets/phghotic.ttf');
-    font-weight: Bold;
     color: #cdd6f4;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* ../assets/bg.png */
     height: 100%;
+    margin: auto;
+
+    /* ../assets/bg.png */
     background-image: url("../assets/bg.png");
     background-repeat: no-repeat;
     background-position: center center;
-    height: 100%;
     overflow: hidden;
     cursor: url("../assets/cursor.png"), auto
+}
+
+li {
+  color: rgba(0, 0, 0, 0);
+  display: flex;
+  color: #cdd6f4;
+  align-items: center;
+  justify-content: center
+}
+
+a:visited {
+  color: #89b4fa;
+  text-decoration: underline; 
+}
+
+a:hover {
+  color: #89b4fa;
+  text-decoration: underline; 
 }
 
 a {
   text-decoration: none
 }
 
-.title {
-  font-size: 36px;
-}
+#sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
 
-#random {
-  color: #6c7086
-}
+  padding: 10px;
 
-#likings {
-  font-size: 20px;
+  background-color: rgb(30, 30, 46, 0.5);
+  border: 4px solid #cdd6f4;
+  border-radius: 8px;
+
+  text-align: center;
+
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  transform: translate(-50%, -50%);
 }
 
 #maintext {
@@ -37,6 +61,15 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  width: 30%;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
   padding: 0px;
   padding-bottom: 20px;
@@ -48,37 +81,13 @@ a {
   border-radius: 8px;
 }
 
-
-.link {
-  font-size: 24px;
+#random_warning {
+  padding-top: 10px;
 }
 
-#yt {
-  color: #f38ba8;
-}
-
-#twt {
-  color: #89dceb
-}
-
-#reddit {
-  color: #fab387
-}
-
-#mastodon {
-  color: #74c7ec
-}
-
-#bsky {
-  color: #89b4fa
-}
-
-#spreadsheet {
-  color: #a6e3a1
-}
-
-#github {
-  color: #9399b2
+#random, #random_warning {
+  color: #6c7086;
+  padding-top: 5px;
 }
 
 #discord {
@@ -86,6 +95,22 @@ a {
   color: #cba6f7
 }
 
-li {
-  color: rgba(0, 0, 0, 0);
+#some {
+  color: #f5c2e7
+}
+
+.likings {
+  font-size: 20px;
+  color: #f5e0dc;
+}
+
+.likings:link {
+  color: #89b4fa;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.title {
+  font-size: 36px;
 }
