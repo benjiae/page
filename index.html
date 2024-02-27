@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/links.css">
         <script src="./oneko/oneko.js"></script>
-        <div id="links">
+        <div id="links" class="box">
             <li>Links:</li>
                 <br>
                 <li><a class="link" id="yt" href="https://www.youtube.com/channel/UCD0xcGTxYeZA_I4ada5-QaA">Youtube Channel</a></li>
@@ -26,7 +26,7 @@
                 <br>
                 <li><a class="link" id="reddit" href="https://reddit.com/u/benjaYTn">Reddit account</a></li>
         </div>
-        <div id="maintext">
+        <div id="maintext" class="box">
             <h1 id="hi">Hi!</h1>
             <h3 id="main">i'm benjae, someone that likes doing stuff because it's funny</h2>
             <a class="likings" id="some">some stuff i like:</a>
@@ -38,9 +38,12 @@
             <a id="random">placeholder</a>
             <script src="./js/random.js"></script>
             <br>
-            <a href="https://api.statusbadges.me/openspotify/644655968969293826" target="_blank" rel="noopener"><img src="https://api.statusbadges.me/badge/spotify/644655968969293826" alt="spotify"></a>
-            <br>
             <li><a class="link" id="discord">Discord: linuxmint.com</a></li>
+        </div>
+        <div id="nowplaying" class="box">
+            <span>Currently listening to:</span>
+            <span id="listening">loading...</span>
+            <script src="js/lastfm.js"></script>
         </div>
     </body>
 </html>
