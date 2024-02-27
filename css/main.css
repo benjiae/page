@@ -1,5 +1,6 @@
 body, html {
-    font-family: "Inter", sans-serif;
+    font-family: "MS UI Gothic", Verdana, sans-serif;
+    src: url('../assets/msgothic.ttc');
     font-weight: Bold;
     color: #cdd6f4;
     display: flex;
