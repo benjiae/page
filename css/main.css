@@ -11,7 +11,8 @@ body, html {
     background-repeat: no-repeat;
     background-position: center center;
     height: 100%;
-    overflow: hidden
+    overflow: hidden;
+    cursor: url("../assets/cursor.png"), auto
 }
 
 a {
