@@ -10,7 +10,8 @@ body, html {
     background-repeat: no-repeat;
     background-position: center center;
     overflow: hidden;
-    cursor: url("../assets/page_cursor.png"), auto
+    cursor: url("../assets/page_cursor.png"), auto;
+    background-size: cover;
 }
 
 li {
