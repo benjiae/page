@@ -1,6 +1,9 @@
+@font-face {
+  font-family: MS UI Gothic;
+  src: url('../assets/phghotic.ttf');
+}
 body, html {
     font-family: "MS UI Gothic", Verdana, sans-serif;
-    src: url('../assets/phghotic.ttf');
     color: #cdd6f4;
     height: 100%;
     margin: auto;
