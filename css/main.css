@@ -63,12 +63,13 @@ li {
 
 #nowplaying {
   position: absolute;
-  width: 20%;
-  top: 20%;
-  left: 50%;
+  width: 15%;
+  top: 50%;
+  left: 85%;
   transform: translate(-50%, -50%);
   align-items: center;
   padding: 5px;
+  line-height: 1.5;
 }
 
 #random_warning {

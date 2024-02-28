@@ -19,7 +19,11 @@ const getTrack = async () => {
     // ARTIST: json.track.artist['#text']
 
     let items = `
+    <img src="${json.track.image[1]['#text']}">
+    <br>
     <span style="color: #a6e3a1">${json.track.name}</span>
+    <br>
+    <span>By</span>
     <br>
     <span style="color: #a6e3a1">${json.track.artist['#text']}</span>
     `
