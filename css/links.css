@@ -10,6 +10,10 @@
   color: #89dceb
 }
 
+#twtbot {
+  color: #89dceb
+}
+
 #reddit {
   color: #fab387
 }
@@ -28,4 +32,20 @@
 
 #github {
   color: #9399b2
+}
+
+a:visited {
+  text-decoration: none
+}
+
+a:link {
+  text-decoration: none
+}
+
+a:link:hover {
+  text-decoration: underline
+}
+
+a {
+  color: inherit;
 }

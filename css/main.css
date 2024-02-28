@@ -1,9 +1,9 @@
 @font-face {
-  font-family: "MS UI Gothic";
-  src: url('../assets/phghotic.ttf');
+  font-family: "Miracode";
+  src: url('../assets/Miracode.ttf');
 }
 body, html {
-    font-family: "MS UI Gothic", Verdana, sans-serif;
+    font-family: "Miracode", Verdana, sans-serif;
     color: #cdd6f4;
     height: 100%;
     margin: auto;
