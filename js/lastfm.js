@@ -31,5 +31,5 @@ const getTrack = async () => {
     document.getElementById("listening").innerHTML = items
 };
 
-setInterval(() => { getTrack(); }, 10000);
+setInterval(() => { getTrack(); }, 5000);
 getTrack();
