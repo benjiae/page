@@ -1,4 +1,7 @@
 const BASE_URL = `https://lastfm-last-played.biancarosa.com.br/benjae_/latest-song`;
+const playing = document.getElementById("listening");
+
+playing.style.paddingBottom = "20%";
 
 const getTrack = async () => {
     const request = await fetch(BASE_URL);
@@ -28,8 +31,9 @@ const getTrack = async () => {
     <span style="color: #a6e3a1">${json.track.artist['#text']}</span>
     `
 
-    document.getElementById("listening").innerHTML = items
-};
+    playing.style.paddingBottom = "0px";
+    playing.innerHTML = items;
 
+};
 setInterval(() => { getTrack(); }, 5000);
 getTrack();
