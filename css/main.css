@@ -2,6 +2,7 @@
   font-family: "Miracode";
   src: url('../assets/Miracode.ttf');
 }
+
 body, html {
     font-family: "Miracode", Verdana, sans-serif;
     color: #cdd6f4;
@@ -43,7 +44,7 @@ li {
 }
 
 #links {
-  width: 15%;
+  width: 25%;
   padding: 10px;
   position: absolute;
   top: 50%;
@@ -66,7 +67,7 @@ li {
 
 #nowplaying {
   position: absolute;
-  width: 15%;
+  width: 25%;
   top: 50%;
   left: 85%;
   transform: translate(-50%, -50%);
