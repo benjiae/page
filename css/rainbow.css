@@ -1,0 +1,65 @@
+@keyframes catppuccin {
+    0% {
+        color: #f5e0dc
+    }
+
+    7% {
+        color: #f2cdcd
+    }
+
+    14% {
+        color: #f5c2e7
+    }
+
+    21% {
+        color: #cba6f7
+    }
+
+    28% {
+        color: #f38ba8	
+    }
+
+    35% {
+        color: #eba0ac
+    }
+
+    42% {
+        color: #fab387
+    }
+
+    49% {
+        color: #f9e2af	
+    }
+
+    56% {
+        color: #a6e3a1
+    }
+
+    63% {
+        color: #94e2d5
+    }
+
+    70% {
+        color: #89dceb
+    }
+
+    77% {
+        color: #74c7ec
+    }
+
+    84% {
+        color: #89b4fa
+    }
+
+    92% {
+        color: #b4befe
+    }
+
+    100% {
+        color: #cdd6f4
+    }
+}
+
+.rainbow {
+    animation: catppuccin 8s infinite
+}
