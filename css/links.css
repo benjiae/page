@@ -3,20 +3,36 @@
   line-height: 20px;
 }
 
+#github {
+  color: #f5e0dc
+}
+
+#twitch {
+  color: #f5c2e7	
+}
+
 #yt {
-  color: #f38ba8;
+  color: #eba0ac
+}
+
+#reddit {
+    color: #fab387	
+}
+
+#src {
+  color: #f9e2af
+}
+
+#spreadsheet {
+  color: #a6e3a1
 }
 
 #twt {
-  color: #89dceb
+  color: #94e2d5
 }
 
 #twtbot {
   color: #89dceb
-}
-
-#reddit {
-  color: #fab387
 }
 
 #mastodon {
@@ -25,14 +41,6 @@
 
 #bsky {
   color: #89b4fa
-}
-
-#spreadsheet {
-  color: #a6e3a1
-}
-
-#github {
-  color: #9399b2
 }
 
 a:visited {
