@@ -5,12 +5,14 @@
 
 html {
   cursor: url("../assets/page_cursor.png"), auto;
+  overflow:visible;
 }
 
 body {
     font-family: "Miracode", Verdana, sans-serif;
     color: #cdd6f4;
     background-color: #1e1e2e;
+    overflow:visible;
 }
 
 li {
@@ -29,7 +31,7 @@ li {
 
 #everything {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: row;
   gap: 10px;
 
   align-items: center;
