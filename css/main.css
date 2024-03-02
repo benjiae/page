@@ -15,43 +15,41 @@ body {
     overflow:visible;
 }
 
-li {
-  color: rgba(0, 0, 0, 0);
-  display: flex;
-  color: #cdd6f4;
-  align-items: center;
-  justify-content: center
-}
-
 .box {
   border: 2px solid #6c7086;
 
   text-align: center;
 }
 
+li {
+  color: rgb(0,0,0,0)
+}
+
 #everything {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
   flex-direction: row;
   gap: 10px;
 
-  align-items: center;
-
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%)
+  top: 50vh;
+  transform: translateY(-50%) 
 }
 
 #links {
   padding-bottom: 20px;
   padding-left: 20px;
   padding-right: 20px;
+  grid-column: 1;
+  width: 300px
 }
 
 #maintext {
   padding-bottom: 20px;
   padding-left: 20px;
   padding-right: 20px;
+  grid-column: 2;
+  width: 500px
 }
 
 #nowplaying {
@@ -61,6 +59,8 @@ li {
   flex-direction: column;
   width: 35%;
   height: 25vh;
+  grid-column: 1;
+  width: 340px;
   word-break: break-all;
 }
 
@@ -75,23 +75,20 @@ li {
 }
 
 #some {
-  color: #f5c2e7
+  color: #f5c2e7;
+  font-size: 20px;
 }
 
 .likings {
-  font-size: 20px;
   color: #f5e0dc;
-}
-
-.likings:link {
-  color: #89b4fa;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .title {
   font-size: 36px;
+}
+
+hr {
+  border-color: #6c7086
 }
 
 span {
