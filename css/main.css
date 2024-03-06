@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Miracode";
-  src: url('miracode-webfont.woff2') format('woff2'),
-  url('miracode-webfont.woff') format('woff');
+  src: url('/assets/miracode-webfont.woff2') format('woff2'),
+  url('/assets/miracode-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 
@@ -31,13 +31,17 @@ li {
 
 #everything {
   display: grid;
-  grid-template-columns: repeat(4, 6fr);
-  flex-direction: row;
-  gap: 10px;
+  grid-template-columns: repeat(6, fr);
 
-  position: absolute;
-  top: 50vh;
-  transform: translateY(-50%) 
+  margin: auto;
+
+  width: fit-content;
+  height: fit-content;
+  place-content: center;
+  top: 50%;
+  transform: translateY(25%);
+
+  gap: 10px
 }
 
 #links {
@@ -45,15 +49,15 @@ li {
   padding-left: 20px;
   padding-right: 20px;
   grid-column: 2;
-  width: 300px
+  width: 300px;
 }
 
 #maintext {
+  margin-top: auto;
   padding-bottom: 20px;
   padding-left: 20px;
   padding-right: 20px;
   grid-column: 3;
-  width: 500px
 }
 
 #nowplaying {
