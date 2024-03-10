@@ -59,6 +59,9 @@ li {
   padding-right: 20px;
   grid-column: 3;
   width: 400px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
 }
 
 #nowplaying {
@@ -108,7 +111,7 @@ span {
 }
 
 @media screen and (max-width: 800px) {
-  #maintext {
+  #maintext, #nekolink {
     grid-column: 2;
   }
   #everything {
