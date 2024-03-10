@@ -9,14 +9,12 @@
 
 html {
   cursor: url("../assets/page_cursor.png"), auto;
-  overflow:visible;
 }
 
 body {
     font-family: "Miracode", Verdana, sans-serif;
     color: #cdd6f4;
     background-color: #1e1e2e;
-    overflow:visible;
 }
 
 .box {
@@ -30,25 +28,20 @@ li {
 }
 
 #everything {
-  display: grid;
-  grid-template-columns: repeat(6, fr);
-
-  margin: auto;
-
-  width: fit-content;
-  height: fit-content;
-  place-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
   top: 50%;
-  transform: translateY(25%);
-
-  gap: 10px
+  transform: translateY(50%)
 }
 
 #links {
   padding-bottom: 20px;
   padding-left: 20px;
   padding-right: 20px;
-  grid-column: 2;
+  grid-column: 1;
   width: 400px;
 }
 
@@ -57,7 +50,7 @@ li {
   padding-bottom: 20px;
   padding-left: 20px;
   padding-right: 20px;
-  grid-column: 3;
+  grid-column: 2;
   width: 400px;
   height: 400px;
   display: flex;
@@ -74,7 +67,7 @@ li {
   padding-bottom: 20px;
   padding-left: 20px;
   padding-right: 20px;
-  grid-column: 2;
+  grid-column: 3;
   word-break: break-all;
   hyphens: auto;
 }
@@ -110,19 +103,14 @@ span {
   flex-direction: row;
 }
 
-@media screen and (max-width: 800px) {
-  #maintext, #nekolink {
-    grid-column: 2;
-  }
+@media screen and (max-width: 1360px) {
   #everything {
-    top: 0%;
-    transform: translateY(0%)
+    transform: translateY(10%);
   }
 }
 
-@media screen and (max-height: 800px) and (not (max-width: 800px)) {
+@media screen and (max-width: 910px) {
   #everything {
-    top: 25%;
-    transform: translateY(10%)
+    transform: translateY(0%);
   }
 }
