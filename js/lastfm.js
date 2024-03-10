@@ -18,7 +18,7 @@ const getTrack = async () => {
     `
 
     if(!isPlaying) {
-        playing.innerHTML = "Nothing.";
+        playing.innerHTML = "Nothing.<br>(or last.fm just sucks)";
     } else {
         playing.innerHTML = items;
     }
