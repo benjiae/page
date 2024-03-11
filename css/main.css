@@ -34,14 +34,14 @@ li {
   justify-content: center;
   width: 100%;
   top: 50%;
-  transform: translateY(50%)
+  transform: translateY(50%);
+  gap: 12px
 }
 
 #links {
   padding-bottom: 20px;
   padding-left: 20px;
   padding-right: 20px;
-  grid-column: 1;
   width: 400px;
 }
 
@@ -50,7 +50,6 @@ li {
   padding-bottom: 20px;
   padding-left: 20px;
   padding-right: 20px;
-  grid-column: 2;
   width: 400px;
   height: 400px;
   display: flex;
@@ -67,9 +66,9 @@ li {
   padding-bottom: 20px;
   padding-left: 20px;
   padding-right: 20px;
-  grid-column: 3;
   word-break: break-all;
-  hyphens: auto;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 #random, #random_warning {
