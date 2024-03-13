@@ -63,3 +63,9 @@
 .rainbow {
     animation: catppuccin 8s infinite
 }
+
+@keyframes moveBackground {
+    100% {
+        background-position: 1920px -1080px;
+    }
+}
