@@ -61,7 +61,7 @@
 }
 
 .rainbow {
-    animation: catppuccin 8s infinite
+    animation: catppuccin 8s linear infinite
 }
 
 @keyframes moveBackground {

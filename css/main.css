@@ -16,13 +16,16 @@ body {
     color: #cdd6f4;
     background: #1e1e2e url("/assets/catp_bg.png");
     animation: moveBackground 100s linear infinite;
-    margin: 0;
 }
 
 .box {
-  border: 2px solid #6c7086;
+  border: 2px dashed #6c7086;
   background-color: #1e1e2e;
   text-align: center;
+  max-width: 400px;
+  min-height: 200px;
+  padding: 20px;
+  margin: auto;
 }
 
 li {
@@ -30,47 +33,25 @@ li {
 }
 
 #everything {
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
+  display: grid;
   justify-content: center;
-  width: 100%;
-  top: 50%;
-  transform: translateY(50%);
-  gap: 12px
+  gap: 10px;
+  height: auto;
 }
 
 #links {
-  padding-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-  width: 400px;
+  grid-column: 1;
 }
 
 #maintext {
-  margin-top: auto;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-  width: 400px;
-  height: 400px;
-  display: flex;
-  flex-direction: column;
+  grid-column: 2;
 }
 
 #nowplaying {
+  grid-column: 1;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-  height: 200px;
-  width: 400px;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-  word-break: break-all;
-  margin-top: auto;
-  margin-bottom: auto;
+  justify-content: center;
 }
 
 #random, #random_warning {
@@ -112,6 +93,8 @@ span {
 
 @media screen and (max-width: 910px) {
   #everything {
+    display: flex;
+    flex-direction: column;
     transform: translateY(0%);
   }
 }
