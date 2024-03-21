@@ -1,5 +1,6 @@
 const BASE_URL = `https://lastfm-last-played.biancarosa.com.br/benjae_/latest-song`;
 const playing = document.getElementById("listening");
+const current = document.getElementById("current");
 
 const getTrack = async () => {
     const request = await fetch(BASE_URL);
@@ -18,8 +19,10 @@ const getTrack = async () => {
     `
 
     if(!isPlaying) {
-        playing.innerHTML = "Nothing.<br>(or last.fm just sucks)";
+        current.innerHTML = "Last song played:"
+        playing.innerHTML = items;
     } else {
+        current.innerHTML = "Currently listening to:"
         playing.innerHTML = items;
     }
     

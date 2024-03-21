@@ -49,12 +49,13 @@ li {
 
 #nowplaying {
   grid-column: 1;
+  grid-row: 2;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-#random, #random_warning {
+.darkened {
   color: #6c7086;
   padding-top: 5px;
 }
