@@ -9,6 +9,7 @@
 
 html {
   cursor: url("../assets/page_cursor.png"), auto;
+  
 }
 
 body {
@@ -16,6 +17,10 @@ body {
     color: #cdd6f4;
     background: #1e1e2e url("/assets/catp_bg.png");
     animation: moveBackground 100s linear infinite;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .box {
@@ -35,8 +40,9 @@ li {
 #everything {
   display: grid;
   justify-content: center;
-  gap: 10px;
-  height: auto;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 #links {
@@ -86,16 +92,19 @@ span {
   flex-direction: row;
 }
 
-@media screen and (max-width: 1360px) {
+@media screen and (max-width: 910px) {
   #everything {
-    transform: translateY(10%);
+    position: relative;
+    top: 0%;
+    transform: translateY(0%);
+    display: flex;
+    flex-direction: column;
   }
 }
 
-@media screen and (max-width: 910px) {
+@media screen and (max-height: 660px) {
   #everything {
     display: flex;
-    flex-direction: column;
-    transform: translateY(0%);
+    flex-direction: row;
   }
 }
