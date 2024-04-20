@@ -47,6 +47,11 @@
   color: #b4befe
 }
 
+#discord {
+  font-size: 16px;
+  color: #cba6f7
+}
+
 a:visited {
   text-decoration: none
 }
