@@ -13,7 +13,7 @@ const getTrack = async () => {
     <br>
     <span style="color: #a6e3a1">${json.track.name}</span>
     <br>
-    <span>By</span>
+    <span>by</span>
     <br>
     <span style="color: #a6e3a1">${json.track.artist['#text']}</span>
     `
@@ -28,5 +28,6 @@ const getTrack = async () => {
     
 
 };
+
 setInterval(() => { getTrack(); }, 5000);
 getTrack();

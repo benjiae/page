@@ -9,72 +9,72 @@
         <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
     </head>
     <body>
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/links.css">
-        <link rel="stylesheet" href="css/animations.css">
-        <div id="everything">
-            <div id="links" class="box">
-                <h1 class="rainbow">Links</h1>
-                <a class="link" id="github" href="https://github.com/benjiae">Github account</a>
-                <br>
-                <a class="link" id="twitch" href="https://twitch.tv/benjae__">Twitch account</a>
-                <br>
-                <a class="link" id="yt" href="https://www.youtube.com/channel/UCD0xcGTxYeZA_I4ada5-QaA">Youtube channel</a>
-                <br>
-                <a class="link" id="reddit" href="https://reddit.com/u/benjaYTn">Reddit account</a>
-                <br>
-                <a class="link" id="src" href="https://www.speedrun.com/users/benjae">speedrun.com Account</a>
-                <br>
-                <a class="link" id="spreadsheet" href="https://docs.google.com/spreadsheets/d/1dlWXUSb-TESwcc66Uvl-F6jReecCc9hmg4QbJVgkaaY/edit?usp=sharing">Spreadsheet with stuff</a>
-                <br>
-                <a class="link" id="twt" href="https://twitter.com/touhou_7">Twitter account</a>
-                <br>
-                <a class="link" id="twtbot" href="https://twitter.com/badfangametakes">Twitter bot</a>
-                <br>
-                <a class="link" id="mastodon" href="https://mstdn.party/@benjae">Mastodon account</a>
-                <br>
-                <a class="link" id="bsky" href="https://bsky.app/profile/benjae.nekoweb.org">Bluesky account</a>
-                <br>
-                <a class="link" id="bskybot" href="https://bsky.app/profile/fangametakes.bsky.social">Bluesky bot</a>
-                <br><br>
-                <a id="discord">Discord: linuxmint.com</a></li>
+            <link rel="stylesheet" href="css/main.css">
+            <link rel="stylesheet" href="css/animations.css">
+        <div id="container">
+            <div id="header" class="box">
+                <marquee scrollamount="10"><h1 class="rainbow" id="random"> Hi!</h1></marquee>
+                <div id="randomtext">
+                    <marquee scrollamount="5"><p class="darkened">random text!!!! ^^^^</p></marquee>
+                    <script src="/js/random.js"></script>
+                </div>
             </div>
 
-            <div id="maintext" class="box">
-                <h1 id="hi" class="rainbow">Hi!</h1>
-                <marquee id="random" class="darkened">...</marquee>
-                <script src="./js/random.js"></script>
-                <p id="main">I'm benjae, a person i think</p>
-                <span class="some" class="likings">some stuff i like:</span>
-                <br>
-                <a class="likings">•︎touhou (sadly)</a>
-                <br>
-                <a class="likings">•︎iwbtg fangames</a>
-                <br>
-                <a class="likings">•︎nichijou (good anime)</a>
-                <br>
-                <a class="likings">•︎celeste</a>
-                <br>
-                <a class="likings">•︎speedrunning portal i think??</a>
+            <div id="sidebar">
+                <div class="box" id="links">
+                    <h2 class="rainbow">Links:</h2>
+                    <p class="rainbow" style="font-weight: bold;">some accounts</p>
+                        <a href="https://www.youtube.com/channel/UCD0xcGTxYeZA_I4ada5-QaA">• Youtube</a>
+                        <a href="https://twitter.com/touhou_7">• Twitter</a>
+                        <a href="https://github.com/benjiae">• Github</a>
+                        <a href="https://reddit.com/u/benjaytn">• Reddit</a>
+                        <a href="https://www.twitch.tv/benjae__">• Twitch</a>
+                        <p class="rainbow" style="font-weight: bold;">stuff</p>
+                        <a href="https://benjae.atabook.org/">• atabook!!!</a>
+                        <a href="https://docs.google.com/spreadsheets/d/1Sn0EDKqcEaLlQFqIPkHJDJAYraH40EUR9N-JfL3oNhs/edit">• iwbtg clear spreadsheet</a>
+                        <a href="https://docs.google.com/spreadsheets/d/1dlWXUSb-TESwcc66Uvl-F6jReecCc9hmg4QbJVgkaaY/">• more misc spreadsheet (listened stuff, celeste goldens and fangame awards 2024 rats) (MOSTLY SPANISH)</a>
+                </div>
 
-                <br>
-                <br>
-                <a class="darkened">help what do i put here afdguahf</a>
-            </div>
-            <div class="box">
-                <span class="rainbow">yuuka!!!!<br>(what a great character)</span>
-                <br>
-                <img src="/assets/yuuka-touhou.gif" height="128">
-                <br>
-                <span class="darkened">source: tenor</span>
+                <div class="box" id="nowplaying">
+                    <h2 id="current" class="rainbow">Currently listening to:</h2>
+                    <div id="listening">
+                    </div>
+                    <script src="/js/lastfm.js"></script>
+                </div>
             </div>
 
-            <div id="nowplaying" class="box">
-                <span id="current" class="rainbow">Currently listening to:</span>
-                <br>
-                <span id="listening">loading...<br>(this requires JS!)</span>
-                <script src="js/lastfm.js"></script>
+            <div class="box" id="main">
+
+                <div id="mainmain">
+                    <h2>hi!!!!</h2>
+                    <p>I'm benjae <span class="rainbow">(he/him)</span></p>
+                    <p>a dumbass that does stuff!!!!! i guess</p>
+                    <p>as you can see on those 2 sides, my taste on everything <span class="rainbow">sucks</span>!!!</p>
+                    <p><a href="https://twitter.com/badfangametakes">i also have a twitter bot!!!!</a></p>
+                    <br>
+                </div>
+                <div id="section1m" class="box">
+                    <h3>music taste!!!!</h3>
+                    <p>i like stuff like</p>
+                        <span class="highlighted">• toho bossa nova</span>
+                        <span class="highlighted">• glass beach</span>
+                        <span class="highlighted">• idk man <a href="https://open.spotify.com/playlist/67nzxO2Tu3fuM5xYzowp8w?si=49b6dd571875427a">here's my playlist</a> (the worst playlist of all time)</span>
+                </div>
+                <div id="section2m" class="box">
+                    <h3>games i play!!!!</h3>
+                        <span class="highlighted">• celeste</span>
+                        <span class="highlighted">• <a href="https://docs.google.com/spreadsheets/d/1Sn0EDKqcEaLlQFqIPkHJDJAYraH40EUR9N-JfL3oNhs/edit">iwbtg fangames</a></span>
+                        <span class="highlighted">• touhou (sometimes)</span>
+                        <span class="highlighted">• played ultrakill but haven't opened it in a while</span>
+                        <span class="highlighted">• same with geometry dash</span>
+                </div>
+                <div id="mainmain2">
+                    <img src="assets/yuuka-touhou.gif" width="128" height="128" alt="a gif of yuuka kazami, specifically the one from Touhou 13.5 ~ Hopeless Masquerade", title="source: tenor">
+                    <p>yuuka!!!!! what a great character</p>
+                </div>
             </div>
+        </div>
+
         </div>
     </body>
 </html>

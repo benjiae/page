@@ -25,11 +25,13 @@ text_array = [
     "te amo chile",
     ":(){ :|:& };:",
     ":3",
-    "is it normal to not like [popular thing]"
+    "is it normal to not like [popular thing]",
+    "holaaaaaaaa"
 ]
 
-text_array.sort(function() {return 0.5 - Math.random()})
-
-var random_text = text_array[0]
-
-text.innerHTML = random_text
+function reroll(array) {
+    text_array.sort(function() {return 0.5 - Math.random()})
+    random_text = text_array[0]
+    text.innerHTML = random_text
+}
+reroll(text_array)
