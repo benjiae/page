@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+}
+
+html {
+    background-color: #1e1e2e;
+    color: #cdd6f4;
+    height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "MS UI Gothic";
+}
+
+.gray {
+    color: #7f849c
+}
+
+.subtitle {
+    font-size: 12px;
+}
+
+.italic {
+    font-style: italic
+}
+
+.box {
+    border: #cdd6f4 dotted;
+    padding: 10px;
+}
+
+.spoiler {
+    color: #7f849c;
+    background-color: #7f849c
+}
+
+.spoiler:hover {
+    color: #cdd6f4;
+    background-color: #00000000
+}
+
+#everything {
+    /* border: #cdd6f4 dotted; */
+    width: 50vw;
+    min-height: 100%;
+    text-align: center;
+    
+    display: grid;
+    grid-template-columns: 1fr 0.25fr;
+    grid-template-rows: 0.1fr 0.5fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px; 
+}
+
+#title {
+    grid-area: 1 / 1 / 2 / 3;
+    height: 100%
+}
+
+#main {
+    grid-area: 2 / 1 / 5 / 2;
+    padding-left: 10px;
+    padding-right: 10px;
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 0.25fr 1fr;
+    grid-template-rows: 0.25fr, 0.25fr, 0.25fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+} 
+
+#stuff {
+    grid-area: 2 / 1 / 2 / 2;
+    max-height: 100%;
+    text-align: left;
+}
+
+#likings {
+    grid-area: 2 / 3 / 3 / 4;
+    text-align: left;
+}
+
+#sidebar {
+    grid-area: 2 / 2 / 5 / 3;
+}
+
+#lastfm {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    padding: 10px;
+}
+
+
+a:link, a:visited {
+    text-decoration: none;
+    background-color: #1e1e2e;
+    color: #89b4fa;
+    display: inline-block;
+}
+
+a:hover {
+    background-color: #89b4fa;
+    color: #1e1e2e;
+    text-decoration: underline;
+}
+
+hr {
+    color: #6c7086
+}
+
+@media screen and (max-width: 930px) {
+    #everything {
+        width: 75%
+    }
+}
+
+@media screen and (max-width: 670px) {
+    #everything {
+        width: 100%
+    }
+}
+
+@media screen and (max-width: 460px) {
+    #main {
+        grid-area: 2 / 1 / 5 / 3;
+    }
+    #sidebar {
+        grid-area: 6 / 1 / 7 / 3
+    }
+}
+
+@media screen and (max-width: 360px) {
+    #stuff {
+        grid-area: 2 / 1 / 3 / 4;
+    }
+    
+    #likings {
+        grid-area: 3 / 1 / 4 / 4;
+    }
+}
+
+@media screen and (max-height: 900px) {
+    
+}
