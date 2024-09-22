@@ -1,0 +1,62 @@
+@import url("/css/catppuccin.css");
+
+@keyframes background {
+    from {
+        background-position: -1920px -1080px;
+    } to {
+        background-color: 1920px 1080px;
+    }
+}
+
+body {
+    margin: 0;
+    background-image: url("/assets/bg.png");
+    background-repeat: repeat;
+    animation: background 120s linear infinite;
+    color: var(--text);
+    font-family: "MS UI Gothic";
+    height: 100%;
+    width: 100%;
+}
+
+li {
+    text-align: left;
+}
+
+a {
+    text-decoration: underline;
+    color: var(--blue)
+}
+.subtitle {
+    color: var(--subtext0);
+    font-size: 0.75em;
+}
+
+.spoiler {
+    background-color: var(--subtext0);
+    color: var(--subtext0);
+}
+.spoiler:hover {
+    background-color: #00000000;
+}
+#container {
+    gap: 30px;
+    min-height: 90vh;
+    max-width: 50vw;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 1%;
+    background-color: var(--surface0);
+    border-radius: 3%;
+    width: 90%;
+}

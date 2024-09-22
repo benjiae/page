@@ -1,0 +1,71 @@
+@import url("/css/catppuccin.css");
+@import url("/css/main.css");
+
+textarea {
+    width: 50%;
+    resize: none;
+    padding: 0.5em;
+    border: var(--surface1) dotted 2px;
+    border-radius: 12px;
+    background-color: var(--base);
+    color: var(--text);
+    text-align: center;
+}
+
+#links:link, #links:active, #links:visited, #links:focus {
+    text-decoration: underline
+}
+
+#main_two {
+    display: grid;
+    grid-template-columns: 1.75fr 1.75fr;
+    gap: 5px;
+}
+
+#links {
+    grid-area: 1/1/2/2;
+    background-color: var(--surface1);
+    border-radius: 3%;
+    padding: 1%;
+    padding-bottom: 2em;
+}
+
+#likes {
+    background-color: var(--surface1);
+    border-radius: 3%;
+    padding: 1%;
+}
+
+#buttons_div {
+    position: relative;
+    gap: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+#footer {
+    width: 50%;
+}
+
+.buttons {
+    scale: 100%;
+    transition: scale 0.2s ease-in
+}
+
+.buttons:hover {
+    scale: 125%;
+    transition: scale 0.3s ease-out
+}
+
+@media screen and (max-width: 780px) {
+    #main{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #main_two {
+        display: flex;
+        flex-direction: column;
+    }
+}
