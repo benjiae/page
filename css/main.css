@@ -1,5 +1,7 @@
 @import url("/css/catppuccin.css");
 
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
 @keyframes background {
     from {
         background-position: -1920px -1080px;
@@ -14,7 +16,8 @@ body {
     background-repeat: repeat;
     animation: background 120s linear infinite;
     color: var(--text);
-    font-family: "MS UI Gothic";
+    font-family: "Comic Neue", sans-serif;
+    font-weight: bold;
     height: 100%;
     width: 100%;
 }

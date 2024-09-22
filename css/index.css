@@ -49,11 +49,11 @@ textarea {
 
 .buttons {
     scale: 100%;
-    transition: scale 0.2s ease-in
+    transition: scale 0.2s ease-in;
 }
 
 .buttons:hover {
-    scale: 125%;
+    scale: 110%;
     transition: scale 0.3s ease-out
 }
 
