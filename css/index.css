@@ -5,7 +5,7 @@ textarea {
     width: 50%;
     resize: none;
     padding: 0.5em;
-    border: var(--surface1) dotted 2px;
+    border: var(--surface0) dotted 2px;
     border-radius: 12px;
     background-color: var(--base);
     color: var(--text);
@@ -24,14 +24,14 @@ textarea {
 
 #links {
     grid-area: 1/1/2/2;
-    background-color: var(--surface1);
+    background-color: var(--surface0);
     border-radius: 3%;
     padding: 1%;
     padding-bottom: 2em;
 }
 
 #likes {
-    background-color: var(--surface1);
+    background-color: var(--surface0);
     border-radius: 3%;
     padding: 1%;
 }
