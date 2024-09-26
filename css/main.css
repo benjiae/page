@@ -1,6 +1,10 @@
 @import url("/css/catppuccin.css");
 
-@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@font-face {
+    font-family: "Comic neue";
+    src:
+        url("/assets/fonts/ComicNeue-Regular.ttf")
+}
 
 @keyframes background {
     from {
@@ -17,7 +21,6 @@ body {
     animation: background 120s linear infinite;
     color: var(--text);
     font-family: "Comic Neue", sans-serif;
-    font-weight: bold;
     height: 100%;
     width: 100%;
 }
@@ -62,4 +65,5 @@ a {
     background-color: var(--base);
     border-radius: 3%;
     width: 90%;
+    border: var(--surface0) dotted
 }
