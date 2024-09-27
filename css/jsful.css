@@ -1,0 +1,15 @@
+@import url("/css/catppuccin.css");
+@import url("/css/main.css");
+
+.division {
+    background-color: var(--surface0);
+    border-radius: 3%;
+    min-height: 200px;
+    margin: 0;
+}
+
+#main_two {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
