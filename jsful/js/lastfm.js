@@ -13,7 +13,7 @@ socket.onmessage = function(event) {
     data = JSON.parse(event.data)
 
     lastfm = document.getElementById("lastfm")
-    lastfm.innerHTML += `
+    lastfm.innerHTML = `
     <p id="nowplaying"></p>
     <p><span id="artist" style="color: #a6e3a1"></span><br>-<br><span id="song" style="color: #a6e3a1"></span></p>
     <p id="albumart"></p>

@@ -13,3 +13,16 @@
     grid-template-columns: 1fr 1fr;
     gap: 5px;
 }
+
+@media screen and (max-width: 780px) {
+    #main{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #main_two {
+        display: flex;
+        flex-direction: column;
+    }
+}
