@@ -15,8 +15,10 @@ socket.onmessage = function(event) {
     lastfm = document.getElementById("lastfm")
     lastfm.innerHTML = `
     <p id="nowplaying"></p>
-    <p><span id="artist" style="color: #a6e3a1"></span><br>-<br><span id="song" style="color: #a6e3a1"></span></p>
+    <div class="break"></div>
     <p id="albumart"></p>
+    <div class="space"></div>
+    <p><span id="artist" style="color: #a6e3a1"></span><br>-<br><span id="song" style="color: #a6e3a1"></span></p>
 `
 
     // convert to variables
