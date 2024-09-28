@@ -7,7 +7,10 @@ titles = [
     ":3",
     "the official unofficial fanmade but endorsed by the owner custom-made page of (insert name)",
     "\"fungus mcmungus\" -StrawBunny",
-    "\"jorma\" -oikmo"
+    "\"jorma\" -oikmo",
+    "listen to toho bossa nova (all 13 of them)",
+    "would it be funny to get a domain",
+    "m"
 ]
 
 title = titles[Math.floor(Math.random()*titles.length)]
