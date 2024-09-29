@@ -1,4 +1,4 @@
-
+name: Deploy to Nekoweb
 
 on: [push]
 
@@ -9,9 +9,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        
-      # your build step here
-        
+
       - name: deploy2nekoweb
         uses: deploy2nekoweb/deploy2nekoweb@main
         with:
