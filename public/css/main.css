@@ -45,6 +45,25 @@ a {
 .spoiler:hover {
     background-color: #00000000;
 }
+
+.division {
+    background-color: var(--surface0);
+    border-radius: 3%;
+    padding: 1%;
+    margin: 0
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.break {
+    flex-basis: 100%;
+    width: 0;
+}
+
 #container {
     gap: 30px;
     min-height: 90vh;

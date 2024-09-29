@@ -16,24 +16,12 @@ textarea {
     text-decoration: underline
 }
 
-#links {
-    grid-area: 1/1/2/2;
-    background-color: var(--surface0);
-    border-radius: 3%;
-    padding: 1%;
-    padding-bottom: 2em;
-}
-
 #main_two {
     display: grid;
     grid-template-columns: 1.75fr 1.75fr;
     gap: 5px;
-}
-
-#likes {
-    background-color: var(--surface0);
-    border-radius: 3%;
-    padding: 1%;
+    overflow-y: scroll;
+    max-height: 335px;
 }
 
 #buttons_div {
@@ -56,6 +44,18 @@ textarea {
 .buttons:hover {
     scale: 110%;
     transition: scale 0.3s ease-out
+}
+
+.js {
+    display: none;
+    visibility: hidden;
+}
+
+#webrings {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 @media screen and (max-width: 780px) {
