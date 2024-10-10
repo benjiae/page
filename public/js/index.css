@@ -1,0 +1,20 @@
+@import url('/css/main.css');
+
+#main {
+  line-height: 2em;
+  gap: 12px;
+}
+
+#nekocafe {
+  background-color: var(--crust);
+  border: var(--text) 3px dotted;
+  height: 184px;
+}
+
+#webrings {
+  background-color: var(--crust);
+  border: var(--text) 3px dotted;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

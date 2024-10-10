@@ -1,11 +1,14 @@
+---
+title: yayyy
+---
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Posts</title>
-    <link rel="stylesheet" href="main.css">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/css/main.css">
     <meta property="description" content="benjae's page!!!">
     <meta property="og:url" content="https://benjae.nekoweb.org">
     <meta property="og:type" content="website">
@@ -14,16 +17,9 @@
     <body>
         <!-- feel free to steal anything (it's probably stolen too!)-->
         <div id="container">
-            <div id="main">
-                <h1>Posts</h1>
-                <p><a href="/">go back!!!</a></p>
-                <ul>
-                    
-                    <li>
-                        <a href="/idk-a-blog-maybe/eleventy/">(I tried) figuring out 11ty</a> (Thu Sep 27 2024)
-                    </li>
-                    
-                </ul>
+            <div id="main" style="overflow-y: scroll; line-height: 2em; height: 600px; text-align: center;">
+                <p><a href="/blog/">go back!!!</a></p>
+                {{ content | safe }}
             </div>
         </div>
     </body>

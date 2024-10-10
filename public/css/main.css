@@ -1,88 +1,92 @@
-@import url("/css/catppuccin.css");
+@import url('/css/catppuccin.css');
 
 @font-face {
-    font-family: "Comic neue";
-    src:
-        url("/assets/fonts/ComicNeue-Regular.ttf")
+  font-family: 'Comic Neue';
+  font-style: normal;
+  font-display: block;
+  src: url("/assets/fonts/ComicNeue-Regular.ttf") 
+    format("truetype");
 }
 
-@keyframes background {
-    from {
-        background-position: -1920px -1080px;
-    } to {
-        background-color: 1920px 1080px;
-    }
+* {
+  margin: 0;
+}
+
+html {
+  position: relative;
 }
 
 body {
-    margin: 0;
-    background-image: url("/assets/bg.png");
-    background-repeat: repeat;
-    animation: background 120s linear infinite;
-    color: var(--text);
-    font-family: "Comic Neue", sans-serif;
-    height: 100%;
-    width: 100%;
+  background-color: var(--base);
+  color: var(--text);
+  font-family: 'Comic Neue'
 }
 
-li {
-    text-align: left;
+a:link, a:visited, a:active {
+  text-decoration: underline;
+  color: var(--blue)
 }
 
-a {
-    text-decoration: underline;
-    color: var(--blue)
-}
-.subtitle {
-    color: var(--subtext0);
-    font-size: 0.75em;
-}
-
-.spoiler {
-    background-color: var(--subtext0);
-    color: var(--subtext0);
-}
-.spoiler:hover {
-    background-color: #00000000;
+textarea {
+  width: 50%;
+  resize: none;
+  padding: 0.5em;
+  border: var(--surface0) dotted 2px;
+  border-radius: 12px;
+  background-color: var(--base);
+  color: var(--text);
+  text-align: center;
 }
 
-.division {
-    background-color: var(--surface0);
-    border-radius: 3%;
-    padding: 1%;
-    margin: 0
-}
-
-.center {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-
-.break {
-    flex-basis: 100%;
-    width: 0;
+code {
+  background-color: var(--crust);
+  border-radius: 3px;
+  font-family: monospace
 }
 
 #container {
-    gap: 30px;
-    min-height: 90vh;
-    max-width: 50vw;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
 }
 
 #main {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    padding: 1%;
-    background-color: var(--base);
-    border-radius: 3%;
-    width: 90%;
-    border: var(--surface0) dotted
+  padding: 1.5em;
+  width: 700px;
+  height: 400px;
+
+  border: var(--lavender) 3px dotted;
+  background-color: var(--mantle);
+}
+
+.section {
+  background-color: var(--crust);
+  border: var(--text) 2px dotted;
+  padding: 1.5em
+}
+
+.center {
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 0.6em;
+  color: var(--overlay1)
+}
+
+.flex-right {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+}
+
+.flex-down {
+  display: flex;
+  flex-direction: column;
+}
+
+.overflow {
+  overflow-y: scroll;
 }

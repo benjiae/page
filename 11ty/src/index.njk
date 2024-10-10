@@ -1,0 +1,33 @@
+---
+title: things
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posts</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <meta property="description" content="benjae's page!!!">
+    <meta property="og:url" content="https://benjae.nekoweb.org">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="benjae">
+</head>
+    <body>
+        <!-- feel free to steal anything (it's probably stolen too!)-->
+        <div id="container">
+            <div id="main">
+                <h1>Posts</h1>
+                <p><a href="/">go back!!!</a></p>
+                <ul>
+                    {% for post in collections.posts | reverse %}
+                    <li>
+                        <a href="/blog/{{ post.url }}">{{ post.data.title }}</a> ({{ post.date.toDateString() }})
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>
