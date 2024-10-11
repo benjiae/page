@@ -118,7 +118,7 @@ code {
   overflow-x: scroll;
 }
 
-@media (max-width: 670px) {
+@media screen and (max-width: 670px) {
   #main {
     display: flex;
     flex-direction: column;
@@ -130,7 +130,7 @@ code {
   }
 }
 
-@media (max-width: 222px) {
+@media screen and (max-width: 222px) {
   #main {
     height: 90vh;
     width: 90vw;
