@@ -8,19 +8,30 @@
   </head>
   <body>
     <div id="container">
-      <div id="main" class="box flex-down center overflow">
+      <div id="main" class="flex-down center overflow-y">
+        <div id="main-text">
         <h1>the javascript jail</h1>
-        <div id="nekocafe" class="overflow">
-          <h2>nekoweb cafe status!!</h2>
+        <div id="nekocafe" class="overflow-y">
+          <h1>loading nekocafe...</h1>
         </div>
-        <script src="nekocafe.js"></script>
-        <div id="webrings" class="center">
+        <div id="webrings" class="center overflow-y">
           <div id="touhou-ring">
             <script type="text/javascript" src="https://glassplanet.neocities.org/webring/touhou/onionring-variables.js"></script>
             <script type="text/javascript" src="https://glassplanet.neocities.org/webring/touhou/widget/widget-pcb1.js"></script>
           </div>
         </div>
       </div>
+        <div id="dir" class="overflow-x flex-down section">
+          <h2>Nav!!</h2>
+          <a href="/">Home</a>
+          <a href="/about/">About</a>
+          <a href="/blog/">Blog i think?</a>
+          <a>>Content with js (includes webrings)</a>
+          <a href="https://benjae.atabook.org">Guestbook</a>
+          <a href="../" style="position: sticky; top: 100%;">Go back</a>
+        </div>
+      </div>
     </div>
+    <script src="nekocafe.js"></script>
   </body>
 </html>

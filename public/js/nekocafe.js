@@ -15,7 +15,7 @@ const post_url = "https://social.nekoweb.org/post/?id=";
     
         div = document.getElementById("nekocafe")
         
-        div.innerHTML += `
+        div.innerHTML = `
             <img id="nekocafe-pfp" src=${json["image"]} height=64 width=64">
             <p id="nekocafe-poster"><a href="${profile_url + username}">${json["name"]}</a></p>
             <p id="nekocafe-text"><a href="${post_url + json["id"]}">${json["post"]}</a></p>

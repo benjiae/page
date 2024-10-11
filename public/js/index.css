@@ -1,14 +1,16 @@
 @import url('/css/main.css');
 
 #main {
-  line-height: 2em;
-  gap: 12px;
+  overflow-x:hidden
 }
 
 #nekocafe {
   background-color: var(--crust);
   border: var(--text) 3px dotted;
-  height: 184px;
+  padding: 1.5em;
+  margin-top: 1em;
+  margin-bottom: 6px;
+  margin-left: 6px;
 }
 
 #webrings {
@@ -17,4 +19,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 1.5em;
+  margin-left: 6px;
 }

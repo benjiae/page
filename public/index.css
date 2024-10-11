@@ -1,22 +1,16 @@
 @import url('/css/main.css');
 
 #main {
-  display: grid;
-  grid-template-columns: 300px 400px;
   grid-template-rows: 150px 250px;
   grid-column-gap: 6px;
   grid-row-gap: 6px; 
 }
 
 #socials {
-  grid-area: 1 / 1 / 3 / 2;
+  grid-area: 2 / 2 / 3 / 3;
   line-height: 1.5em;
 }
 
 #welcome {
   grid-area: 1 / 2 / 2 / 3;
-}
-
-#dir {
-  grid-area: 2 / 2 / 3 / 3;
 }

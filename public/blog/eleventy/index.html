@@ -1,22 +1,21 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>(I tried) figuring out 11ty</title>
-    <link rel="stylesheet" href="/css/main.css">
-    <meta property="description" content="benjae's page!!!">
-    <meta property="og:url" content="https://benjae.nekoweb.org">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="benjae">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>(I tried) figuring out 11ty</title>
+        <link rel="stylesheet" href="/blog/blog.css">
+        <meta property="description" content="benjae's page!!!">
+        <meta property="og:url" content="https://benjae.nekoweb.org">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="benjae">
+    </head>
     <body>
-        <!-- feel free to steal anything (it's probably stolen too!)-->
         <div id="container">
-            <div id="main" style="overflow-y: scroll; line-height: 2em; height: 600px; text-align: center;">
-                <p><a href="/blog/">go back!!!</a></p>
-                <h1>(I tried) figuring out 11ty</h1>
+            <div id="main">
+                <div class="overflow-y main-text">
+                    <h1>(I tried) figuring out 11ty</h1>
 <p>27-09-24</p>
 <h2>why</h2>
 <p>Hi! as you might see i deleted the other one because i was too lazy to port it to the new site, now that i've seen 11ty being mentioned on nekoweb i decided to try it.</p>
@@ -30,7 +29,17 @@ Now, this is the part where i started searching:</p>
 <p>To get non-global assets working i did the same but instead of <code>eleventyConfig.addPassthroughCopy(&quot;assets/&quot;);</code> i put <code>eleventyConfig.addPassthroughCopy(&quot;src/*/*.png&quot;);</code> on my <code>.eleventy.js</code> file</p>
 <p>so yeah, that's it, i just did this to try how 11ty actually worked and it's pretty good! i'll probably experiment more with it later</p>
 
+                </div>
+                <div id="dir" class="overflow-x flex-down section">
+                    <h2>Nav!!</h2>
+                    <a href="/">Home</a>
+                    <a href="/about/">About</a>
+                    <a>>Blog i think?</a>
+                    <a href="/js/">Content with js (includes webrings)</a>
+                    <a href="https://benjae.atabook.org">Guestbook</a>
+                    <a href="../" style="position: sticky; top: 100%;">Go back</a>
+                </div>
             </div>
-        </div>
+        </body>
     </body>
 </html>

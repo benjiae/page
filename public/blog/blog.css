@@ -1,0 +1,13 @@
+@import url('/css/main.css');
+
+.main-text > h1 {
+  color: var(--peach)
+}
+
+.main-text > h2 {
+  color: var(--yellow)
+}
+
+.main-text > p:nth-of-type(2n) {
+  background-color: var(--surface0);
+}
