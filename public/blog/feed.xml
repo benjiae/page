@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:base="https://benjae.nekoweb.org/">
+  <title>benjae&#39;s Blog</title>
+  <subtitle>can i shut up?? lets see</subtitle>
+  <link href="https://benjae.nekoweb.org/feed.xml" rel="self"/>
+  <link href="https://benjae.nekoweb.org/"/>
+  <updated>2024-09-27T00:00:00Z</updated>
+  <id>https://benjae.nekoweb.org/</id>
+  <author>
+    <name>benjae</name>
+    <email>benja.ae@proton.me</email>
+  </author>
+  <entry>
+    <title>(I tried) figuring out 11ty</title>
+    <link href="https://benjae.nekoweb.org/eleventy/"/>
+    <updated>2024-09-27T00:00:00Z</updated>
+    <id>https://benjae.nekoweb.org/eleventy/</id>
+    <content xml:lang="en" type="html">&lt;h1&gt;(I tried) figuring out 11ty&lt;/h1&gt;
+&lt;p&gt;27-09-24&lt;/p&gt;
+&lt;h2&gt;why&lt;/h2&gt;
+&lt;p&gt;Hi! as you might see i deleted the other one because i was too lazy to port it to the new site, now that i&#39;ve seen 11ty being mentioned on nekoweb i decided to try it.&lt;/p&gt;
+&lt;h2&gt;installing and using it&lt;/h2&gt;
+&lt;p&gt;idk man it&#39;s just &lt;code&gt;npm install @11ty/eleventy&lt;/code&gt; (i have fucked this up and installed &lt;code&gt;eleventy&lt;/code&gt; instead of &lt;code&gt;@11ty/eleventy&lt;/code&gt; but shhhh)&lt;/p&gt;
+&lt;p&gt;I did configure it to get the files from &lt;code&gt;src/&lt;/code&gt; instead of the root, and to output on &lt;code&gt;idk-a-blog-maybe/&lt;/code&gt; instead of &lt;code&gt;_site/&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;To get text, i literally created an &lt;code&gt;index.md&lt;/code&gt;, put some stuff on it, ran &lt;code&gt;npx @11ty/eleventy&lt;/code&gt; and i was done &lt;br /&gt;
+Now, this is the part where i started searching:&lt;/p&gt;
+&lt;p&gt;Getting a layout (because i&#39;m not going to modify the index.html manually) to work was pretty easy, i just copied the index.html from the main site, removed unnecesary stuff and put it on &lt;code&gt;src/_includes/layout.njk&lt;/code&gt; (&lt;a href=&quot;https://www.11ty.dev/docs/layouts/&quot;&gt;thanks documentation (link)&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;To get css (and the global assets) working, I put the folders on the root and yeah you get it &lt;a href=&quot;https://www.11ty.dev/docs/copy/&quot;&gt;i also followed the documentation (link)&lt;/a&gt; to import the &lt;code&gt;css&lt;/code&gt; and &lt;code&gt;assets&lt;/code&gt; folders, figuring out the directory where i had to import stuff from was trial and error tho, &lt;a href=&quot;https://benjae.nekoweb.org/eleventy/screenshot.png&quot;&gt;but it works! (image)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;To get non-global assets working i did the same but instead of &lt;code&gt;eleventyConfig.addPassthroughCopy(&amp;quot;assets/&amp;quot;);&lt;/code&gt; i put &lt;code&gt;eleventyConfig.addPassthroughCopy(&amp;quot;src/*/*.png&amp;quot;);&lt;/code&gt; on my &lt;code&gt;.eleventy.js&lt;/code&gt; file&lt;/p&gt;
+&lt;p&gt;so yeah, that&#39;s it, i just did this to try how 11ty actually worked and it&#39;s pretty good! i&#39;ll probably experiment more with it later&lt;/p&gt;
+</content>
+  </entry>
+</feed>

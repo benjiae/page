@@ -1,7 +1,7 @@
 ---
 layout: layout.njk
 title: (I tried) figuring out 11ty
-date: 2024-09-28
+date: 2024-09-27
 tags:
     - posts
 ---

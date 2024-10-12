@@ -45,6 +45,10 @@ code {
   font-family: monospace;
 }
 
+hr {
+  color: var(--surface1);
+}
+
 #container {
   display: flex;
   align-items: center;
@@ -74,9 +78,10 @@ code {
 }
 
 #dir > a:nth-of-type(2n) {
-  color: var(--text)
-} #dir > a:nth-of-type(2n+1) {
-  color: var(--blue)
+  color: var(--text);
+}
+#dir > a:nth-of-type(2n + 1) {
+  color: var(--blue);
 }
 
 .main-text {
