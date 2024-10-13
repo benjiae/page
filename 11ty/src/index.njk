@@ -25,7 +25,7 @@ title: things
                         {% for post in collections.posts | reverse %}
                             <li>
                                 <a href="/blog/{{ post.url }}">{{ post.data.title }}</a>
-                                ({{ post.date.toDateString() }})
+                                ({{ post.date.getFullYear() }}-{{ post.date.getMonth() }}-{{ post.date.getDate() }})
                             </li>
                         {% endfor %}
                     </ul>

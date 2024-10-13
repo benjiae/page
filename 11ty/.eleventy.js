@@ -1,10 +1,25 @@
-const pluginRss = require("@11ty/eleventy-plugin-rss");
+import {DateTime} from "luxon";
+import {feedPlugin} from "@11ty/eleventy-plugin-rss";
 
-module.exports = function (eleventyConfig) {
-    // RSS
-  eleventyConfig.addPlugin(pluginRss);
-  eleventyConfig.addLiquidFilter("dateToRfc3339", pluginRss.dateToRfc3339);
-  
+export default function(eleventyConfig) {
+  eleventyConfig.addPlugin(feedPlugin, {
+		type: "atom", // or "rss", "json"
+		outputPath: "/feed.xml",
+		collection: {
+			name: "posts", // iterate over `collections.posts`
+			limit: 10,     // 0 means no limit
+		},
+		metadata: {
+			language: "en",
+			title: "benjae's blog attempt",
+			subtitle: "will i ever shut up?? idk",
+			base: "https://benjae.nekoweb.org/",
+			author: {
+				name: "benjae",
+				email: "benja.ae@proton.me", // Optional
+			}
+		}
+	});
   
   // everything else
   eleventyConfig.addPassthroughCopy("src/*/*.png");
