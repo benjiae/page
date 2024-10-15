@@ -5,6 +5,7 @@ keywords: blog-progress
 date: 2024-10-15
 ---
 
+# {{ title }}
 {{ date }}
 ## Why
 you know the deal, i wanted to try something and somehow got it to work
