@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>benjae's blog attempt</title>
+<link>https://benjae.nekoweb.org/blog</link>
+<description>Will I ever shut up?? let's see</description>
+<item><title>trying to use aya</title><link>https://benjae.nekoweb.org/blog/blog/aya-1/index.html</link>                 <description>i decided to use aya</description><pubDate>Tue, 15 Oct 2024 00:00:00 -0300</pubDate>                 <guid>https://benjae.nekoweb.org/blog/blog/aya-1/index.html</guid></item>
+<item><title>figuring out 11ty</title><link>https://benjae.nekoweb.org/blog/blog/11ty-1/index.html</link>                 <description>i decided to use 11ty</description><pubDate>Fri, 27 Sep 2024 00:00:00 -0300</pubDate>                 <guid>https://benjae.nekoweb.org/blog/blog/11ty-1/index.html</guid></item>
+</channel>
+</rss>

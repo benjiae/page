@@ -1,12 +1,12 @@
 ---
-layout: layout.njk
-title: (I tried) figuring out 11ty
+title: Figuring out 11ty
+description: i decided to use 11ty
+keywords: blog-progress
 date: 2024-09-27
-tags:
-    - posts
 ---
-# (I tried) figuring out 11ty
-27-09-24
+
+# {{ title }}
+{{ date }}
 ## why
 Hi! as you might see i deleted the other one because i was too lazy to port it to the new site, now that i've seen 11ty being mentioned on nekoweb i decided to try it.
 
