@@ -19,10 +19,6 @@ i'd put the process here but the repo already explains the basic things, to bund
 
 I do have to enter wsl every time i want to use it but it can't be *that* bad right
 
-### rss
-so for some reason the rss script on the repo wasn't working and i was seeing what failed for like 5 minutes(?), it turns out i missed the ``date`` variable lol
-also i had to [change the script a bit](https://github.com/benjiae/page/aya/.aya/rss) for it to validate on [the w3c page](https://validator.w3.org/feed/#validate_by_input) (probably a big skill issue on my part)
-
 i wanted an excuse to write something and yeah here you are
 
 thanks for reading!!!

@@ -3,4 +3,3 @@ rm -r .pub
 export PUBDIR="../public" && aya build
 rm -r ../public/blog
 cp -r .pub/. ../public/
-./.aya/rss
