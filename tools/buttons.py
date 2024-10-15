@@ -37,6 +37,22 @@ button.append(
   )
 )
 
+button.append(
+  Button(
+    "https://kuuriii.nekoweb.org",
+    "https://kuuriii.nekoweb.org/assets/img/8831kuuriii.gif",
+    "kuuriii's café",
+  )
+)
+
+button.append(
+  Button(
+    "https://tengu.space",
+    "/assets/buttons/dev.png",
+    "tengu.space",
+  )
+)
+
 for n in button:
   print(
     f'<a href="{n.href}"><img src="{n.img}" class="buttons" width=88 height=31 alt="{n.alt}"></a>'
