@@ -39,17 +39,19 @@ button.append(
 
 button.append(
   Button(
-    "https://kuuriii.nekoweb.org",
-    "https://kuuriii.nekoweb.org/assets/img/8831kuuriii.gif",
-    "kuuriii's café",
-  )
-)
-
-button.append(
-  Button(
     "https://tengu.space",
     "/assets/buttons/dev.png",
     "tengu.space",
+  )
+)
+
+# 
+
+button.append(
+  Button(
+    "https://gra.phite.ro",
+    "https://gra.phite.ro/badge.png",
+    "gra.phite.ro",
   )
 )
 
