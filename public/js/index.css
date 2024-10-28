@@ -4,6 +4,14 @@
   overflow-x:hidden
 }
 
+#dir {
+  grid-area: 1 / 1 / 3 / 2
+}
+
+#main-text {
+  grid-area: 1 / 2 / 3 / 4
+}
+
 #nekocafe {
   background-color: var(--crust);
   border: var(--text) 3px dotted;

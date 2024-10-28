@@ -128,6 +128,7 @@ hr {
     display: flex;
     flex-direction: column;
     height: 75vh;
+    width: 80vw
   }
   #dir {
     top: 100%;
@@ -138,7 +139,7 @@ hr {
 @media screen and (max-width: 222px) {
   #main {
     height: 90vh;
-    width: 90vw;
+    width: 75vw;
     font-size: 0.75em;
   }
 }
