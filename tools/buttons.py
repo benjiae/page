@@ -55,6 +55,14 @@ button.append(
   )
 )
 
+button.append(
+  Button(
+    "https://akko.wtf",
+    "/assets/buttons/akkowtf.png",
+    "Luna Nova",
+  )
+)
+
 for n in button:
   print(
     f'<a href="{n.href}"><img src="{n.img}" class="buttons" width=88 height=31 alt="{n.alt}"></a>'
