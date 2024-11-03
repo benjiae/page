@@ -17,6 +17,7 @@ link.append(
     "text",
   )
 )
+link.append(Link("Steam", "steamcommunity.com/id/gentoo-linux", "text"))
 link.append(Link("Github", "github.com/benjiae", "text"))
 link.append(Link("Bluesky", "bsky.app/profile/benjae.nekoweb.org", "sapphire"))
 link.append(Link("Twitter⭐", "x.com/touhou_7", "blue"))
@@ -27,7 +28,6 @@ link.append(Link("Osu! (💔)", "osu.ppy.sh/users/11749005", "pink"))
 link.append(Link("Reddit (sorry)", "reddit.com/u/benjaytn", "peach"))
 link.append(Link("Youtube", "youtube.com/@Benjae_", "red"))
 link.append(Link("Last.fm", "last.fm/user/benjae_", "red"))
-
 
 for n in link:
   print(f'<a href="https://{n.link}" style="color: var(--{n.color})">{n.text}</a>')
