@@ -20,6 +20,6 @@ As i am (sadly) a tetris main, i destroyed the things where you play tetris and 
 
 As for the "accidental" clear it's because i thought there was a chapter 8 based on the clear % (it was on 93%), so when i finished 7-10 the [Historian achievement told me something](stream-chat.png)
 
-Since i'm still at 14/42 achievements i still have a long way to go, and [i sure](steam-cleaner.png) [need to](steam-chain.png)) gamble on some achievements (puzzle league too!!)
+Since i'm still at 14/42 achievements i still have a long way to go, and [i sure](steam-cleaner.png) [need to](steam-chain.png) gamble on some achievements (puzzle league too!!)
 
 Pretty good game! I will keep playing it
