@@ -1,9 +1,15 @@
 @import url('/css/main.css');
 
 #main {
-  grid-template-rows: 150px 250px;
+  grid-template-rows: 200px 200px;
   grid-column-gap: 6px;
   grid-row-gap: 6px; 
+}
+
+#dir {
+  grid-area: 1 / 1 / 2 / 2;
+  line-height: 1.5em;
+  text-align: left;
 }
 
 #socials {
@@ -17,4 +23,16 @@
 
 #buttondiv {
   height: 49px;
+}
+
+#updates {
+  grid-area: 2 / 1 / 3 / 2
+}
+
+#updates > p:nth-of-type(2) {
+  background-color: var(--surface0);
+}
+
+#updates > p {
+  background-color: var(--base);
 }
