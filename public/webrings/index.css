@@ -12,15 +12,6 @@
   grid-area: 1 / 2 / 3 / 4
 }
 
-#nekocafe {
-  background-color: var(--crust);
-  border: var(--text) 3px dotted;
-  padding: 1.5em;
-  margin-top: 1em;
-  margin-bottom: 6px;
-  margin-left: 6px;
-}
-
 #webrings {
   background-color: var(--crust);
   border: var(--text) 3px dotted;

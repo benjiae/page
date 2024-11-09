@@ -1,3 +1,5 @@
+from math import ceil
+
 class Button:
   img = ""
   href = ""
@@ -10,6 +12,10 @@ class Button:
 
 
 button = []
+current = 0
+started_top = 0
+started_bottom = 0
+
 button.append(
   Button(
     "https://frizzbees.dev", "https://i.frizzbees.dev/lF4Cr7AY7xVk.png", "frizzbees.dev"
@@ -45,7 +51,6 @@ button.append(
   )
 )
 
-# 
 
 button.append(
   Button(
@@ -57,13 +62,64 @@ button.append(
 
 button.append(
   Button(
+    "https://lunakitpi.pages.gay/",
+    "/assets/buttons/LunaBTN.png",
+    "luna",
+  )
+)
+
+button.append(
+  Button(
     "https://akko.wtf",
     "/assets/buttons/akkowtf.png",
     "Luna Nova",
   )
 )
 
-for n in button:
-  print(
-    f'<a href="{n.href}"><img src="{n.img}" class="buttons" width=88 height=31 alt="{n.alt}"></a>'
+button.append(
+  Button(
+    "",
+    "/assets/buttons/sween.png",
+    "tim sweeney stretched to fit the 88x31 resolution",
   )
+)
+
+for n in button: # top
+  if started_top == 0:
+    print('<div id=buttons_top>')
+    started_top = 1
+  if current % 2 == 0:
+    if n.href != "":
+      print(
+        f'<a href="{n.href}"><img src="{n.img}" class="buttons" width=88 height=31 alt="{n.alt}"></a>'
+      )
+    else:
+      print(
+        f'<img src="{n.img}" class="buttons" width=88 height=31 alt="{n.alt}">'
+      )
+  current += 1
+
+for n in button: # bottom
+  if started_bottom == 0:
+    print('</div>')
+    print('<div id=buttons_bottom>')
+    started_bottom = 1
+  if current % 2 == 0:
+    if n.href != "":
+      print(
+        f'<a href="{n.href}"><img src="{n.img}" class="buttons" width=88 height=31 alt="{n.alt}"></a>'
+      )
+    else:
+      print(
+        f'<img src="{n.img}" class="buttons" width=88 height=31 alt="{n.alt}">'
+      )
+  current += 1
+print('</div>')
+
+
+print('----------------')
+print(f'css row width: {88*ceil(current/4) + ceil(current/4)*6}')
+print(f'total buttons: {current/2}')
+print(f'total buttons per row: {current/4}')
+print(f'raw width: {ceil(current/4) * 88}')
+print(f'raw padding: {ceil(current/4) * 6}')
