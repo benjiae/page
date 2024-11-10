@@ -26,7 +26,7 @@
   max-width: 396px;
 
   display: grid;
-  grid-template-columns: 470px;
+  grid-template-columns: 564px; /* replace here */
   grid-template-rows: repeat(2, 31px);
   grid-column-gap: 5px;
   grid-row-gap: 5px;

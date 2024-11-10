@@ -1,4 +1,6 @@
 from math import ceil
+import random
+
 
 class Button:
   img = ""
@@ -70,9 +72,25 @@ button.append(
 
 button.append(
   Button(
+    "https://lunahd.neocities.org/",
+    "https://lunahd.neocities.org/assets/88x31/me.png",
+    "miku",
+  )
+)
+
+button.append(
+  Button(
     "https://akko.wtf",
     "/assets/buttons/akkowtf.png",
     "Luna Nova",
+  )
+)
+
+button.append(
+  Button(
+    "https://jadedesoto.pages.gay",
+    "/assets/buttons/jadedesoto.png",
+    "Jade",
   )
 )
 
@@ -84,42 +102,40 @@ button.append(
   )
 )
 
-for n in button: # top
+random.shuffle(button)
+
+for n in button:  # top
   if started_top == 0:
-    print('<div id=buttons_top>')
+    print("<div id=buttons_top>")
     started_top = 1
   if current % 2 == 0:
     if n.href != "":
       print(
-        f'<a href="{n.href}"><img src="{n.img}" class="buttons" width=88 height=31 alt="{n.alt}"></a>'
+        f'<a href="{n.href}"><img src="{n.img}" width=88 height=31 alt="{n.alt}"></a>'
       )
     else:
-      print(
-        f'<img src="{n.img}" class="buttons" width=88 height=31 alt="{n.alt}">'
-      )
+      print(f'<img src="{n.img}" width=88 height=31 alt="{n.alt}">')
   current += 1
 
-for n in button: # bottom
+for n in button:  # bottom
   if started_bottom == 0:
-    print('</div>')
-    print('<div id=buttons_bottom>')
+    print("</div>")
+    print("<div id=buttons_bottom>")
     started_bottom = 1
   if current % 2 == 0:
     if n.href != "":
       print(
-        f'<a href="{n.href}"><img src="{n.img}" class="buttons" width=88 height=31 alt="{n.alt}"></a>'
+        f'<a href="{n.href}"><img src="{n.img}" width=88 height=31 alt="{n.alt}"></a>'
       )
     else:
-      print(
-        f'<img src="{n.img}" class="buttons" width=88 height=31 alt="{n.alt}">'
-      )
+      print(f'<img src="{n.img}" width=88 height=31 alt="{n.alt}">')
   current += 1
-print('</div>')
+print("</div>")
 
 
-print('----------------')
-print(f'css row width: {88*ceil(current/4) + ceil(current/4)*6}')
-print(f'total buttons: {current/2}')
-print(f'total buttons per row: {current/4}')
-print(f'raw width: {ceil(current/4) * 88}')
-print(f'raw padding: {ceil(current/4) * 6}')
+print("----------------")
+print(f"css row width: {88*ceil(current/4) + ceil(current/4)*6}")
+print(f"total buttons: {current/2}")
+print(f"total buttons per row: {current/4}")
+print(f"raw width: {ceil(current/4) * 88}")
+print(f"raw padding: {ceil(current/4) * 6}")
