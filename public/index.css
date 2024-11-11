@@ -3,7 +3,8 @@
 #main {
   grid-template-rows: 200px 200px;
   grid-column-gap: 6px;
-  grid-row-gap: 6px; 
+  grid-row-gap: 6px;
+  overflow-y: scroll
 }
 
 #dir {
@@ -26,7 +27,7 @@
   max-width: 396px;
 
   display: grid;
-  grid-template-columns: 564px; /* replace here */
+  grid-template-columns: 658px; /* replace here */
   grid-template-rows: repeat(2, 31px);
   grid-column-gap: 5px;
   grid-row-gap: 5px;
@@ -35,7 +36,7 @@
 }
 
 #updates {
-  grid-area: 2 / 1 / 3 / 2
+  grid-area: 2 / 1 / 3 / 2;
 }
 
 #updates > p:nth-of-type(2n) {

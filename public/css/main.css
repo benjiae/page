@@ -130,10 +130,6 @@ hr {
     height: 75vh;
     width: 80vw
   }
-  #dir {
-    top: 100%;
-    position: sticky;
-  }
 }
 
 @media screen and (max-width: 222px) {

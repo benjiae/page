@@ -96,6 +96,22 @@ button.append(
 
 button.append(
   Button(
+    "https://sugar.pages.gay/",
+    "/assets/buttons/sugar.gif",
+    "sugar's serene place",
+  )
+)
+
+button.append(
+  Button(
+    "https://winter.entities.org.uk",
+    "https://winter.entities.org.uk/buttons/self.png",
+    "winter :3"
+  )
+)
+
+button.append(
+  Button(
     "",
     "/assets/buttons/sween.png",
     "tim sweeney stretched to fit the 88x31 resolution",
