@@ -1,4 +1,5 @@
 ---
+import { Image } from 'astro:assets';
 interface Props {
   image: string
   href?: string
@@ -8,7 +9,7 @@ interface Props {
 const { image, href, alt, ...props } = Astro.props
 ---
 <a href={href} {...props}>
-  <img src={image} alt={alt} title={alt} width=88 height=31/>
+  <Image src={image} alt={alt} width=88 height=31 title={alt} loading="eager"/>
 </a>
 <style>
   

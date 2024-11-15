@@ -1,5 +1,5 @@
 ---
-const { pageTitle } = Astro.props;
+const { pageTitle, pageDescription } = Astro.props;
 import '../styles/global.css';
 import Nav from '../components/Nav.astro'
 ---
@@ -10,6 +10,8 @@ import Nav from '../components/Nav.astro'
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
+    <meta name="description" content={pageDescription} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>{pageTitle}</title>
   </head>
   <body>
