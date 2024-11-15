@@ -1,0 +1,43 @@
+---
+import Layout from '../../layouts/HTMLayout.astro'
+---
+
+<Layout pageTitle="Webrings!">
+  <h1>The webrings i'm on!!</h1>
+
+  <div style="display: flex; flex-direction: row">
+  <div id="touhou-ring">
+    <script type="text/javascript" src="https://glassplanet.neocities.org/webring/touhou/onionring-variables.js"></script>
+    <script type="text/javascript" src="https://glassplanet.neocities.org/webring/touhou/widget/widget-pcb1.js"></script>
+  </div>
+
+  <webring-container>
+    <a href="https://palette.nekoweb.org/" style="font-weight: bold">the aesthetically pleasing color palette webring</a>
+    <p>the js doesn't load so i have to do this</p>
+    <p>you're currently at: benjae.nekoweb.org</p>
+    <a href="https://immjs.dev/">← immjs.dev</a>|
+    <a href="https://lel.nekoweb.org/">lel.nekoweb.org →</a>
+  </webring-container>
+</div>
+
+<div style="display: flex; flex-direction: row">
+  <div id="fediring">
+    <p>
+      <a href="https://fediring.net/previous?host=benjae.nekoweb.org">← Prev</a>
+      <a href="https://fediring.net/"> Fediring </a>
+      <a href="https://fediring.net/next?host=benjae.nekoweb.org">Next →</a>
+    </p>
+  </div>
+</div>
+</Layout>
+<style>
+  webring-container {
+    width: 330px;
+    height: 130px;
+    background-color: var(--base);
+    text-align: center;
+    border: var(--text) 1px solid;
+    padding: 0.5em;
+    margin-left: 1em;
+  }
+</style>

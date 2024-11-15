@@ -7,10 +7,8 @@ allPosts.sort(
     Date.parse(b.frontmatter.pubDate) - Date.parse(a.frontmatter.pubDate)
 );
 
-
-const pageTitle = "benjae's Blog attempt!!";
 ---
-<HTMLayout>
+<HTMLayout pageTitle="benjae's Blog attempt!!">
   <p>the place where i try to say things more than 3 lines long</p>
   <ul>
     {allPosts.map((blog) => (
