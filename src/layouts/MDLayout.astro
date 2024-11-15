@@ -1,0 +1,26 @@
+---
+const { frontmatter, title } = Astro.props;
+import '../styles/global.css';
+import Nav from '../components/Nav.astro'
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{frontmatter.title}</title>
+  </head>
+  <body>
+    <div id="content">
+      <Nav />
+      <hr>
+    <slot />
+  </div>
+  </body>
+
+  <style>
+
+  </style>
+</html>

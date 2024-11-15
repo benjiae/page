@@ -1,0 +1,46 @@
+@import url('./colors.css');
+@import url('./fonts.css');
+
+body {
+  background-color: var(--base);
+  color: var(--text);
+  font-family: 'Atkinson Hyperlegible';
+  font-size: 14px;
+  text-align: left;
+  padding: 2.5em;
+}
+
+table {
+  background-color: var(--crust);
+  border-collapse: collapse;
+}
+
+td, th {
+  border: var(--overlay0) 2px solid;
+  padding: 0.25em
+}
+
+code {
+  background-color: var(--crust);
+  font-family: monospace;
+  color: var(--green)
+}
+
+a {
+  text-decoration: none;
+  color: var(--blue)
+}
+
+a:hover {
+  text-decoration: underline
+}
+
+hr {
+  color: var(--subtext0)
+}
+
+#content {
+  background-color: var(--mantle);
+  padding: 1em;
+  padding-left: 2em;
+}

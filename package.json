@@ -1,0 +1,19 @@
+{
+  "name": "fdauhjingaofd",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/mdx": "^3.1.9",
+    "@astrojs/rss": "^4.0.9",
+    "@fontsource/twinkle-star": "^5.1.0",
+    "astro": "^4.16.12",
+    "sanitize-html": "^2.13.1"
+  }
+}

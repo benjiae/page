@@ -1,0 +1,22 @@
+---
+import HTMLayout from '../../layouts/HTMLayout.astro'
+const allPosts = await Astro.glob('./posts/**/*.md');
+
+allPosts.sort(
+  (a, b) =>
+    Date.parse(b.frontmatter.pubDate) - Date.parse(a.frontmatter.pubDate)
+);
+
+
+const pageTitle = "benjae's Blog attempt!!";
+---
+<HTMLayout>
+  <p>the place where i try to say things more than 3 lines long</p>
+  <ul>
+    {allPosts.map((blog) => (
+      <li>
+        <a href={blog.url}>{blog.frontmatter.title}</a> ({new Date(blog.frontmatter.pubDate).toLocaleDateString('es-CL', {timeZone: 'UTC'})})
+      </li>
+    ))}
+  </ul>
+</HTMLayout>
