@@ -1,8 +1,8 @@
 ---
 layout: ../../../../layouts/MDLayout.astro
 title: trying to use aya
-description: i decided to use aya
-tags: blog-progress
+description: yet another ssg, but this time it's touhou related so it has to be good right
+tags: ['rewrite', 'blog', 'ssg']
 pubDate: 2024-10-15
 ---
 

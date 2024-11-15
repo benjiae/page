@@ -2,9 +2,8 @@
 layout: ../../../../layouts/MDLayout.astro
 title: 'Rewrite number i forgot: Astro time'
 pubDate: 2024-11-14
-description: 'This is the first post of my new Astro blog.'
-
-tags: ["astro", "rewrite"]
+description: 'Joe many rewrites does it take to be enjoy this ign????? None , their to busy ???? Their frameworks😂😂😂😂😂'
+tags: ['rewrite', 'blog', 'ssg']
 ---
 
 # Rewrite number i forgot: Astro time

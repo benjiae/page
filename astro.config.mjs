@@ -3,6 +3,11 @@ import mdx from '@astrojs/mdx';
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://benjae.nekoweb.org",
-  integrations: [mdx()]
+  site: 'https://benjae.nekoweb.org',
+  integrations: [mdx({
+    syntaxHighlight: 'shiki',
+    shikiConfig: {
+      theme: 'catppuccin-macchiato'
+    }
+  })]
 });

@@ -1,5 +1,8 @@
 ---
 import HTMLayout from '../../layouts/HTMLayout.astro'
+import Article from '../../components/Article.astro'
+
+const pageTitle = "benjae's Blog attempt!!"
 const allPosts = await Astro.glob('./posts/**/*.md');
 
 allPosts.sort(
@@ -8,13 +11,17 @@ allPosts.sort(
 );
 
 ---
-<HTMLayout pageTitle="benjae's Blog attempt!!">
+<HTMLayout pageTitle={pageTitle}>
   <p>the place where i try to say things more than 3 lines long</p>
   <ul>
-    {allPosts.map((blog) => (
-      <li>
-        <a href={blog.url}>{blog.frontmatter.title}</a> ({new Date(blog.frontmatter.pubDate).toLocaleDateString('es-CL', {timeZone: 'UTC'})})
-      </li>
-    ))}
+    {allPosts.map((post) => 
+      <Article 
+        title={post.frontmatter.title}
+        description={post.frontmatter.description}
+        pubDate={post.frontmatter.pubDate}
+        tags={post.frontmatter.tags}
+        href={post.url}
+        />
+    )}
   </ul>
 </HTMLayout>

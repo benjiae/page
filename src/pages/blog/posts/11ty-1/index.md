@@ -1,8 +1,8 @@
 ---
 layout: ../../../../layouts/MDLayout.astro
 title: Figuring out 11ty
-description: i decided to use 11ty
-tags: blog-progress
+description: The adventures of a guy who wanted to try an SSG
+tags: ['rewrite', 'blog', 'ssg']
 pubDate: 2024-09-27
 ---
 
