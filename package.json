@@ -10,10 +10,12 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/check": "^0.9.4",
     "@astrojs/mdx": "^3.1.9",
     "@astrojs/rss": "^4.0.9",
     "@fontsource/twinkle-star": "^5.1.0",
     "astro": "^4.16.12",
-    "sanitize-html": "^2.13.1"
+    "sanitize-html": "^2.13.1",
+    "typescript": "^5.7.2"
   }
 }
