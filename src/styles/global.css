@@ -20,6 +20,10 @@ td, th {
   padding: 0.25em
 }
 
+small {
+  color: var(--subtext0);
+}
+
 code {
   background-color: var(--crust);
   font-family: monospace;
