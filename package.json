@@ -11,10 +11,10 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
-    "@astrojs/mdx": "^3.1.9",
-    "@astrojs/rss": "^4.0.9",
+    "@astrojs/mdx": "^4.0.2",
+    "@astrojs/rss": "^4.0.10",
     "@fontsource/twinkle-star": "^5.1.0",
-    "astro": "^4.16.12",
+    "astro": "^5.0.5",
     "sanitize-html": "^2.13.1",
     "typescript": "^5.7.2"
   }
