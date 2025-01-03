@@ -18,6 +18,8 @@ import Nav from '../components/Nav.astro'
     <div id="content">
       <Nav />
       <hr>
+      <h1>{frontmatter.title}</h1>
+      <p>{frontmatter.description}</p>
     <slot />
   </div>
   </body>
