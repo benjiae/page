@@ -1,7 +1,7 @@
 ---
 layout: ../../../../layouts/MDLayout.astro
 title: I (accidentally) beat Puyo Puyo Tetris
-description: ^ this guy forgot that chapter 8, 9 and 10 were dlcs on the 3ds point and laugh
+description: this guy forgot that chapter 8, 9 and 10 were dlcs on the 3ds point and laugh
 tags: ['videogames']
 pubDate: 2024-11-03
 ---

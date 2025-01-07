@@ -7,7 +7,7 @@ export default defineConfig({
   integrations: [mdx({
     syntaxHighlight: 'shiki',
     shikiConfig: {
-      theme: 'catppuccin-macchiato'
+      theme: 'catppuccin-mocha'
     }
   })]
 });

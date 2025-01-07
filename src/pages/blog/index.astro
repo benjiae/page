@@ -3,7 +3,7 @@ import HTMLayout from '../../layouts/HTMLayout.astro'
 import Article from '../../components/Article.astro'
 
 const pageTitle = "benjae's Blog attempt!!"
-const allPosts = await Astro.glob('./posts/**/*.md');
+const allPosts = Object.values(import.meta.glob('./posts/**/*.md', { eager: true }));
 
 allPosts.sort(
   (a, b) =>
@@ -11,8 +11,21 @@ allPosts.sort(
 );
 
 ---
+
+<head>
+  <head>
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="benjae's Blog attempt!!"
+      href={new URL("rss.xml", Astro.site)}
+    />
+  </head>
+</head>
+
 <HTMLayout pageTitle={pageTitle} pageDescription="the place where i try to say things more than 3 lines long">
   <p>the place where i try to say things more than 3 lines long</p>
+  <a href="/blog/rss.xml">rss attempt</a><span> (sorry for no content i can't figure that out, thanks astro docs)</span>
   <ul>
     {allPosts.map((post) => 
       <Article 
