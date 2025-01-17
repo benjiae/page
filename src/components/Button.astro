@@ -12,5 +12,7 @@ const { image, href, alt, ...props } = Astro.props
   <Image src={image} alt={alt} width=88 height=31 title={alt} loading="eager"/>
 </a>
 <style>
-  
+  a {
+    text-decoration: dotted;
+  }
 </style>

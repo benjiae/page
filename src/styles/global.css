@@ -27,16 +27,15 @@ small {
 code {
   background-color: var(--crust);
   font-family: monospace;
-  color: var(--green)
 }
 
 a {
-  text-decoration: none;
-  color: var(--blue)
+  text-decoration: underline;
+  color: var(--sapphire)
 }
 
-a:hover {
-  text-decoration: underline
+a:visited {
+  color: var(--blue)
 }
 
 hr {
