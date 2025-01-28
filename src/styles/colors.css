@@ -24,7 +24,7 @@
     --surface1: #45475a;
     --surface0: #313244;
     --base: #1e1e2e;
-    --mantle: #181825;
+    --mantle: 24, 24, 37;
     --crust: #11111b;
   }
 }
@@ -54,7 +54,7 @@
     --surface1: #bcc0cc;
     --surface0: #ccd0da;
     --base: #eff1f5;
-    --mantle: #e6e9ef;
+    --mantle: 238, 238, 238;
     --crust: #dce0e8;
   }
 }

@@ -2,7 +2,7 @@
 layout: ../../../../layouts/MDLayout.astro
 title: 'Rewrite number i forgot: Astro time'
 pubDate: 2024-11-14
-description: 'Joe many rewrites does it take to be enjoy this ign????? None , their to busy ???? Their frameworks😂😂😂😂😂'
+description: 'Joe many rewrites does it take to be enjoy this ign????? None , their to busy ???? Their frameworks (laughing emoji)'
 tags: ['rewrite', 'blog', 'ssg']
 ---
 

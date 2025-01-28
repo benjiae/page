@@ -2,7 +2,9 @@
 @import url('./fonts.css');
 
 body {
-  background-color: var(--base);
+  background-image: url('/assets/background.jpg');
+  background-attachment: fixed;
+  background-size: cover;
   color: var(--text);
   font-family: 'Atkinson Hyperlegible';
   font-size: 14px;
@@ -43,7 +45,9 @@ hr {
 }
 
 #content {
-  background-color: var(--mantle);
+  background-color: rgba(var(--mantle), 0.9);
+  backdrop-filter: blur(8px);
   padding: 1em;
   padding-left: 2em;
+  margin: 1em;
 }

@@ -1,7 +1,7 @@
 ---
 const { frontmatter } = Astro.props;
 import '../styles/global.css';
-import Nav from '../components/Nav.astro'
+import Header from '../components/Header.astro'
 ---
 
 <html lang="en">
@@ -16,7 +16,7 @@ import Nav from '../components/Nav.astro'
   </head>
   <body>
     <div id="content">
-      <Nav />
+      <Header />
       <hr>
       <h1>{frontmatter.title}</h1>
       <p>{frontmatter.description}</p>
