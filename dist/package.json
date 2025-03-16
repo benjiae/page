@@ -1,0 +1,22 @@
+{
+  "name": "benjaes-page",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.4",
+    "@astrojs/mdx": "^4.0.8",
+    "@astrojs/rss": "^4.0.11",
+    "@fontsource/twinkle-star": "^5.1.0",
+    "astro": "^5.2.3",
+    "markdown-it": "^14.1.0",
+    "sanitize-html": "^2.13.1",
+    "typescript": "^5.7.2"
+  }
+}

@@ -1,0 +1,40 @@
+---
+import HTMLayout from '../../layouts/HTMLayout.astro'
+import Article from '../../components/Article.astro'
+
+const pageTitle = "benjae's Blog attempt!!"
+const allPosts = Object.values(import.meta.glob('./posts/**/*.md', { eager: true }));
+
+allPosts.sort(
+  (a, b) =>
+    Date.parse(b.frontmatter.pubDate) - Date.parse(a.frontmatter.pubDate)
+);
+
+---
+
+<head>
+  <head>
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="benjae's Blog attempt!!"
+      href={new URL("rss.xml", Astro.site)}
+    />
+  </head>
+</head>
+
+<HTMLayout pageTitle={pageTitle} pageDescription="the place where i try to say things more than 3 lines long">
+  <h1>the place where i try to say things more than 3 lines long</h1>
+  <a href="/blog/rss.xml">rss attempt</a><span> (sorry for no content i can't figure that out, thanks astro docs)</span>
+  <ul>
+    {allPosts.map((post) => 
+      <Article 
+        title={post.frontmatter.title}
+        description={post.frontmatter.description}
+        pubDate={post.frontmatter.pubDate}
+        tags={post.frontmatter.tags}
+        href={post.url}
+        />
+    )}
+  </ul>
+</HTMLayout>
