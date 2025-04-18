@@ -1,34 +1,34 @@
 @font-face {
-  font-family: 'Atkinson Hyperlegible';
-  src: url('/assets/fonts/Atkinson/WOFF/Atkinson-Hyperlegible-Regular-102.woff') format('woff'),
-      url('/assets/fonts/Atkinson/WOFF2/Atkinson-Hyperlegible-Regular-102.woff2') format('woff2');
+  font-family: 'Atkinson Hyperlegible Next';
+  src: url('/assets/fonts/Atkinson Hyperlegible Next/TTF/AtkinsonHyperlegibleNext-Regular.ttf') format('truetype'),
+      url('/assets/fonts/Atkinson Hyperlegible Next/WOFF2/AtkinsonHyperlegibleNext-Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Atkinson Hyperlegible';
-  src: url('/assets/fonts/Atkinson/WOFF/Atkinson-Hyperlegible-Bold-102.woff') format('woff'),
-      url('/assets/fonts/Atkinson/WOFF2/Atkinson-Hyperlegible-Bold-102.woff2') format('woff2');
+  font-family: 'Atkinson Hyperlegible Next';
+  src: url('/assets/fonts/Atkinson Hyperlegible Next/TTF/AtkinsonHyperlegibleNext-Bold.ttf') format('truetype'),
+      url('/assets/fonts/Atkinson Hyperlegible Next/WOFF2/AtkinsonHyperlegibleNext-Bold.woff2') format('woff2');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Atkinson Hyperlegible';
-  src: url('/assets/fonts/Atkinson/WOFF/Atkinson-Hyperlegible-Italic-102.woff') format('woff'),
-      url('/assets/fonts/Atkinson/WOFF2/Atkinson-Hyperlegible-Italic-102.woff2') format('woff2');
+  font-family: 'Atkinson Hyperlegible Next';
+  src: url('/assets/fonts/Atkinson Hyperlegible Next/TTF/AtkinsonHyperlegibleNext-Italic.ttf') format('truetype'),
+      url('/assets/fonts/Atkinson Hyperlegible Next/WOFF2/AtkinsonHyperlegibleNext-Italic.woff2') format('woff2');
   font-weight: normal;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Atkinson Hyperlegible';
-  src: url('/assets/fonts/Atkinson/WOFF/Atkinson-Hyperlegible-BoldItalic-102.woff') format('woff'),
-      url('/assets/fonts/Atkinson/WOFF2/Atkinson-Hyperlegible-BoldItalic-102.woff2') format('woff2');
+  font-family: 'Atkinson Hyperlegible Next';
+  src: url('/assets/fonts/Atkinson Hyperlegible Next/TTF/AtkinsonHyperlegibleNext-BoldItalic.ttf') format('truetype'),
+      url('/assets/fonts/Atkinson Hyperlegible Next/WOFF2/AtkinsonHyperlegibleNext-BoldItalic.woff2') format('woff2');
   font-weight: bold;
   font-style: italic;
   font-display: swap;
