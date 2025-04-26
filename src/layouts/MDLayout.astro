@@ -2,6 +2,8 @@
 const { frontmatter } = Astro.props;
 import '../styles/global.css';
 import Header from '../components/Header.astro'
+import { Image } from 'astro:assets';
+import Yuuka from '../images/yuuka09.png'
 ---
 
 <html lang="en">
@@ -16,15 +18,10 @@ import Header from '../components/Header.astro'
     <title>{frontmatter.title}</title>
   </head>
   <body>
-    <div id="content">
       <Header />
-      <h1>{frontmatter.title}</h1>
-      <p>{frontmatter.description}</p>
     <slot />
-  </div>
   </body>
 
   <style>
-
   </style>
 </html>
