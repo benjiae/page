@@ -33,9 +33,3 @@
   font-style: italic;
   font-display: swap;
 }
-
-@font-face {
-	font-family: 'lekomajuna';
-	src: url('/assets/fonts/leko majuna.ttf')
-}
-
