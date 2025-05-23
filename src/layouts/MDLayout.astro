@@ -11,15 +11,17 @@ import Yuuka from '../images/yuuka09.png'
     <link href="https://plasmatrap.com/@benjae" rel="me">
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content={frontmatter.description} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>{frontmatter.title}</title>
   </head>
   <body>
-      <Header />
-    <slot />
+	<div id="main">
+		<Header />
+		<slot />
+	</div>
   </body>
 
   <style>

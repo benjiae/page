@@ -9,15 +9,17 @@ import Header from '../components/Header.astro'
     <link href="https://plasmatrap.com/@benjae" rel="me">
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content={pageDescription} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>{pageTitle}</title>
   </head>
   <body>
-      <Header />
-    <slot />
+    <div id="main">
+	  <Header />
+	  <slot />
+	</div>
   </body>
 
   <style>

@@ -1,0 +1,8 @@
+---
+import { Image } from 'astro:assets';
+
+const date = new Date(new Date() - 14400)
+const update = date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate()
+---
+
+{update}

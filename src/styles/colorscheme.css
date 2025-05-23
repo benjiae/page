@@ -27,6 +27,9 @@
     --mantle: #181825;
     --crust: #11111b;
   }
+  body {
+		background: repeat url('/assets/bg-mocha.png');
+	}
 }
 @media (prefers-color-scheme: light) {
   :root {
@@ -56,6 +59,9 @@
     --base: #eff1f5;
     --mantle: #e6e9ef;
     --crust: #dce0e8;
+		body {
+			background: repeat url('/assets/bg-latte.png');
+		}
   }
 }
 
