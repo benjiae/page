@@ -1,5 +1,5 @@
 #! /bin/bash
-## i stole this from https://codeberg.org/Codeberg/pages-server/issues/59
+# i stole this from https://codeberg.org/Codeberg/pages-server/issues/59
 build_directory="dist"
 build_branch="pages"
 
@@ -12,7 +12,7 @@ fi
 # get remote origin url, e.g. https://codeberg.org/user/repo.git
 remote_origin_url=$(git config --get remote.origin.url)
 
-# generate hugo static site to `build` directory
+# generate static site
 npm run build
 
 # initialize a git repo in build_directory and checkout to build_branch
