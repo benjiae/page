@@ -22,7 +22,6 @@ git checkout -b $build_branch
 
 # ignore macOS system files
 echo ".DS_Store" > .gitignore
-echo "sillydomain.name" > .domains
 # stage all files except .gitignore (don't want it in the static site)
 git add -- . ':!.gitignore'
 
