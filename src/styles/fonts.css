@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'Atkinson Hyperlegible Next';
+  src: url('/assets/fonts/Atkinson Hyperlegible Next/TTF/AtkinsonHyperlegibleNext-Regular.ttf') format('truetype'),
+      url('/assets/fonts/Atkinson Hyperlegible Next/WOFF2/AtkinsonHyperlegibleNext-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Atkinson Hyperlegible Next';
+  src: url('/assets/fonts/Atkinson Hyperlegible Next/TTF/AtkinsonHyperlegibleNext-Bold.ttf') format('truetype'),
+      url('/assets/fonts/Atkinson Hyperlegible Next/WOFF2/AtkinsonHyperlegibleNext-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Atkinson Hyperlegible Next';
+  src: url('/assets/fonts/Atkinson Hyperlegible Next/TTF/AtkinsonHyperlegibleNext-Italic.ttf') format('truetype'),
+      url('/assets/fonts/Atkinson Hyperlegible Next/WOFF2/AtkinsonHyperlegibleNext-Italic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Atkinson Hyperlegible Next';
+  src: url('/assets/fonts/Atkinson Hyperlegible Next/TTF/AtkinsonHyperlegibleNext-BoldItalic.ttf') format('truetype'),
+      url('/assets/fonts/Atkinson Hyperlegible Next/WOFF2/AtkinsonHyperlegibleNext-BoldItalic.woff2') format('woff2');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}

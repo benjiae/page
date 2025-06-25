@@ -1,0 +1,32 @@
+---
+interface props {
+  title: string;
+  description: string;
+  pubDate: string;
+  tags: string[];
+  href: string;
+}
+
+const { title, description, pubDate, tags, href, ...props } = Astro.props
+---
+<div class="article">
+  <li><a href={href}>{title}</a></li>
+  <p style="color: var(--subtext0)>">{description}</p>
+  <p class="extra">published at: {pubDate.slice(0,10).replaceAll('-', '/')}</p>
+  <p class="extra">tags: {tags.map((tag) => <span class="tag">{tag}</span><span>&nbsp;</span>)}</p>
+</div>
+
+<style>
+  .extra {
+    font-size: 0.9em;
+    color: var(--subtext1);
+  }
+  .tag {
+    color: var(--subtext0);
+    text-decoration: underline
+  }
+
+  .article {
+    border: var(--subtext0) 2px;
+  }
+</style>

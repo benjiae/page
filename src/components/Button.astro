@@ -1,0 +1,20 @@
+---
+import { Image } from 'astro:assets';
+interface Props {
+  image: string
+  href?: string
+  alt: string
+}
+
+const { image, href, alt, ...props } = Astro.props
+---
+<a href={href} target="_blank" {...props}>
+  <Image src={image} alt={alt} width=88 height=31 title={alt} loading="eager"/>
+</a>
+<style>
+  a {
+    text-decoration: dotted;
+  } img {
+    image-rendering: pixelated;
+  }
+</style>

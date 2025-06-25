@@ -1,0 +1,29 @@
+---
+const { frontmatter } = Astro.props;
+import '../styles/global.css';
+import Header from '../components/Header.astro'
+import { Image } from 'astro:assets';
+import Yuuka from '../images/yuuka09.png'
+---
+
+<html lang="en">
+  <head>
+    <link href="https://plasmatrap.com/@benjae" rel="me">
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="description" content={frontmatter.description} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{frontmatter.title}</title>
+  </head>
+  <body>
+	<div id="main">
+		<Header />
+		<slot />
+	</div>
+  </body>
+
+  <style>
+  </style>
+</html>

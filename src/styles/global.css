@@ -1,0 +1,71 @@
+@import url('./colorscheme.css');
+@import url('./fonts.css');
+
+@keyframes bg {
+	from {
+		background-position: 0 0;
+	} to {
+		background-position: 2048px 2048px;
+	}
+}
+
+body {
+	background-size: 50em;
+	animation: bg 120s linear infinite;
+	margin: auto;
+	margin-top: 2em;
+	width: 75vw;
+}
+
+#main {
+	display: table;
+	background-color: var(--base);
+	border: 0.15em solid var(--surface0);
+	color: var(--text);
+	font-family: 'Atkinson Hyperlegible Next';
+	font-size: 1em;
+	text-align: left;
+	padding: 1em;
+	width: 100%;
+	height: 100%;
+	overflow: scroll;
+}
+
+table {
+	background-color: var(--crust);
+	border-collapse: collapse;
+	overflow-y: scroll;
+}
+
+td, th {
+	border: var(--overlay0) 2px solid;
+	padding: 0.25em
+}
+
+small {
+	color: var(--subtext0);
+}
+
+code {
+	background-color: var(--crust);
+	font-family: monospace;
+}
+
+a {
+	text-decoration: underline;
+	color: var(--sapphire)
+}
+
+a:visited {
+	color: var(--blue)
+}
+
+hr {
+	color: var(--subtext0)
+}
+
+@media screen and (max-width: 950px) {
+	body {
+		margin-left: 5vw
+	}
+}

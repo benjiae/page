@@ -1,0 +1,59 @@
+---
+import Layout from '../../layouts/HTMLayout.astro'
+---
+
+<Layout pageTitle="Webrings!" pageDescription="The webrings i'm on">
+  <h1>The webrings i'm on!!</h1>
+
+  <div id="list" style="display: flex; flex-direction: row; flex-wrap: wrap; margin: 0">
+
+    <div id="touhou-ring">
+      <script type="text/javascript" src="https://glassplanet.neocities.org/webring/touhou/onionring-variables.js"></script>
+      <script type="text/javascript" src="https://glassplanet.neocities.org/webring/touhou/widget/widget-pcb1.js"></script>
+    </div>
+
+    <div id="gleach" class="webring" style="width: 160px; height: 130px;">
+      <a href="https://gleach.garnix.dev" style="font-weight: bold; color: #cc172a">glass beach webring</a>
+      <a href="https://gleach.garnix.dev/prev/sillydomain.name">prev</a>
+      |
+      <a href="https://gleach.garnix.dev/next/sillydomain.name">next</a>
+    </div>
+
+</div>
+
+<div style="display: flex; flex-direction: row">
+  <div id="fediring">
+    <p>
+      <a href="https://fediring.net/previous?host=sillydomain.name">← Prev</a>
+      <a href="https://fediring.net/"> Fediring </a>
+      <a href="https://fediring.net/next?host=sillydomain.name">Next →</a>
+    </p>
+  </div>
+</div>
+</Layout>
+<style>
+
+.webring {
+    background-color: var(--base);
+    text-align: center;
+    border: var(--text) 1px solid;
+	padding: 1em;
+    margin-left: 1em;
+    width: max-content;
+}
+
+#list {
+	gap: 1em
+}
+
+#gleach {
+  background-color: #0f1015;
+  background-image: url('./gleach.png');
+  background-size:  cover;
+  margin: 0;
+}
+
+#gleach > a {
+  color: #faeddc
+}
+</style>
