@@ -29,4 +29,5 @@ git add -- . ':!.gitignore'
 git commit -m "build: update static site"
 git remote add origin $remote_origin_url
 git push --force origin $build_branch
-
+git remote add github git@github.com:benjiae/page.git
+git push --force github $build_branch
