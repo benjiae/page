@@ -10,7 +10,6 @@ if [ -d "$build_directory" ]; then
 fi
 
 # get remote origin url, e.g. https://codeberg.org/user/repo.git
-remote_origin_url=$(git config --get remote.origin.url)
 
 # generate static site
 npm run build
@@ -27,7 +26,7 @@ git add -- . ':!.gitignore'
 
 # commit static site files and force push to build_branch of the origin
 git commit -m "build: update static site"
-git remote add origin $remote_origin_url
+git remote add origin ssh://git@kitsunes.dev/benjae/pages.git
+git remote set-url --add --push origin git@github.com:benjiae/page.git
+git remote set-url --add --push origin ssh://git@kitsunes.dev/benjae/pages.git
 git push --force origin $build_branch
-git remote add github git@github.com:benjiae/page.git
-git push --force github $build_branch
