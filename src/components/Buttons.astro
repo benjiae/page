@@ -1,0 +1,11 @@
+---
+import Button from './Button.astro';
+import json from '../assets/buttons.json'
+---
+
+{
+// i stole this
+json.map((button) => (
+	<Button image={button.img} href={button.href} alt={button.alt} />
+))
+}
