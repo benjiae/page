@@ -133,5 +133,10 @@
         "href": "https://sapphicyearn.ing",
         "img": "https://sapphicyearn.ing/images/88x31s/Lily88x31.png",
         "alt": "Lily"
-    }
+    },
+	{
+		"href": "https://proot.party",
+		"img": "https://proot.party/assets/button.png",
+		"alt": "proot party!"
+	}
 ]
