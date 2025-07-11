@@ -69,3 +69,9 @@ hr {
 		margin-left: 5vw
 	}
 }
+
+@media (prefers-reduced-motion: reduce) {
+	body {
+		animation: none
+	}
+}
