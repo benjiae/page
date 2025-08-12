@@ -9,8 +9,6 @@ if [ -d "$build_directory" ]; then
   rm -rf $build_directory
 fi
 
-# get remote origin url, e.g. https://codeberg.org/user/repo.git
-
 git push
 
 # generate static site

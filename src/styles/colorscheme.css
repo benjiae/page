@@ -28,7 +28,7 @@
     --crust: #11111b;
   }
   body {
-		background: repeat url('/assets/bg-mocha.png');
+		background: repeat url('/assets/bg-mocha.webp');
 	}
 }
 @media (prefers-color-scheme: light) {

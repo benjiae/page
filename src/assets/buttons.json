@@ -20,11 +20,6 @@
         "alt": "ixhby"
     },
     {
-        "href": "https://jadedesoto.pages.gay",
-        "img": "/assets/buttons/jadedesoto.png",
-        "alt": "Jade"
-    },
-    {
         "href": "https://sugar.pages.gay/",
         "img": "/assets/buttons/sugar.gif",
         "alt": "sugar's serene place"
@@ -47,7 +42,7 @@
     {
         "href": "https://sophari.org",
         "img": "https://sophari.org/img/sophari.gif",
-        "alt": "Sophari.org"
+        "alt": "sophari.org"
     },
     {
         "href": "https://maxy.top",
@@ -63,11 +58,6 @@
         "href": "https://guigui.aerocity.site",
         "img": "https://guigui.aerocity.site/88x31/guigui.png",
         "alt": "#Guigui"
-    },
-    {
-        "href": "https://lattemacchiato.dev/",
-        "img": "/assets/buttons/latte.webp",
-        "alt": "Latte"
     },
     {
         "href": "https://cosyivy.xyz/",
@@ -138,5 +128,10 @@
 		"href": "https://proot.party",
 		"img": "https://proot.party/assets/button.png",
 		"alt": "proot party!"
+	},
+	{
+		"href": "https://juxgd.codeberg.page",
+		"img": "https://juxgd.codeberg.page/badges/jux.apng",
+		"alt": "Jux"
 	}
 ]
