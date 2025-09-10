@@ -53,12 +53,19 @@ Things i used:
         const ivy_div = document.querySelector("#ivy");
         const ivy_button = document.querySelector("a[href='https://i1vy.moe']").outerHTML
         let fragment = new DocumentFragment();
+        det = document.createElement("details")
+        det.open = true
+        det.innerHTML = "<summary>the one hundred ivy buttons <input type='button' value='remove' onclick='kill_ivy(this)'</summary>"
+        fragment.append(det)
         for(let i=0; i<=100; i++) {
             let meow = document.createElement("a");
             meow.innerHTML = ivy_button
-            fragment.append(meow)
+            det.append(meow)
         }
         ivy_div.append(fragment)
+    }
+    function kill_ivy(button) {
+        button.parentNode.parentNode.remove()
     }
 `}
 </script>
