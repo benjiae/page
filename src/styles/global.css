@@ -64,6 +64,23 @@ hr {
 	color: var(--subtext0)
 }
 
+input[type="button"] {
+	background-color: var(--crust);
+	color: var(--text);
+	border: none;
+	font-size: 1em;
+	margin-top: 1em;
+}
+
+input[type="button"]:hover {
+	background-color: var(--surface0);
+}
+
+input[type="button"]:active {
+	background-color: var(--text);
+	color: var(--crust)
+}
+
 @media screen and (max-width: 950px) {
 	body {
 		margin-left: 5vw
@@ -75,3 +92,4 @@ hr {
 		animation: none
 	}
 }
+
