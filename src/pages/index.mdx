@@ -8,6 +8,7 @@ import Buttons from '../components/Buttons.astro';
 import Update from '../components/Update.astro';
 
 # haii :3 :waving:
+
 <small>last update was at <Update/>! (utc -4)</small>
 
 I'm benjae, a person i guess, [he/him](https://pronouns.cc/@benjae) \
@@ -23,6 +24,10 @@ i do some stuff i guess, mainly things nobody cares about, such as:
 
 Cool creatures!!
 <Buttons />
+<div class="js" id="ivy" style="display:none">
+    <input type="button" value="one hundred ivy buttons" onclick="ivy()"></input>
+    <a href="https://mk.absturztau.be/notes/acgmxepnyvrz01er">(the joke)</a>
+</div>
 
 Cool things!!
 <Button image="/assets/buttons/akkowtf.png" href="https://akko.wtf" alt="Luna Nova"/>
@@ -38,3 +43,18 @@ Things i used:
 - maybe some stolen ideas (thanks [emi](https://garnix.dev))
 
 [check the source code!!](https://codeberg.org/benjae/pages)
+
+<script>{`
+    const jsstuff = document.querySelector(".js");
+    jsstuff.style.display = "block";
+
+    function ivy() {
+        const ivy_div = document.querySelector("#ivy");
+        const ivy_button = document.querySelector("a[href='https://i1vy.moe']").outerHTML
+        console.log(ivy_button)
+        for(let i=0; i<=100; i++) {
+            ivy_div.innerHTML += ivy_button
+        }
+    }
+`}
+</script>
