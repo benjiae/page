@@ -52,10 +52,14 @@ Things i used:
     function ivy() {
         const ivy_div = document.querySelector("#ivy");
         const ivy_button = document.querySelector("a[href='https://i1vy.moe']").outerHTML
-        console.log(ivy_button)
+        let fragment = new DocumentFragment();
         for(let i=0; i<=100; i++) {
-            ivy_div.innerHTML += ivy_button
+            let meow = document.createElement("a");
+            meow.innerHTML = ivy_button
+            console.log(meow)
+            fragment.append(meow)
         }
+        ivy_div.append(fragment)
     }
 `}
 </script>
