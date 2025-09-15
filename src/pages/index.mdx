@@ -3,9 +3,11 @@ layout: ../layouts/MDLayout.astro
 title: "benjae's site"
 description: 'me'
 ---
-import Button from '../components/Button.astro';
+import Button from '../components/ButtonImg.astro';
+import ButtonLink from '../components/ButtonLink.astro';
 import Buttons from '../components/Buttons.astro';
 import Update from '../components/Update.astro';
+import ClickHere from '../components/ClickHere.astro';
 
 # haii :3 :waving:
 
@@ -30,17 +32,27 @@ Cool creatures!!
     <br />
 </div>
 
-Cool things!!
-<Button image="/assets/buttons/akkowtf.png" href="https://akko.wtf" alt="Luna Nova"/>
+Misc buttons!! \
+<small>Most of these were grabbed from [The 88x31 GIF Collection](https://cyber.dabamos.de/88x31/), the ones that aren't have a comment in the site's [index.mdx](https://codeberg.org/benjae/pages/src/branch/main/src/pages/index.mdx)</small> \
+<small>The click here button's css is practically stolen from [lyra's blogpost](https://lyra.horse/blog/2025/08/you-dont-need-js/), the idea was just too silly to not do</small>
+<ButtonLink image="/assets/buttons/akkowtf.png" href="https://akko.wtf" alt="Luna Nova" /> {/* Grabbed from https://akko.wtf */ }
+<Button image="/assets/buttons/misc/elwiwi.png" alt="el wiwi" /> {/* I don't know the image's source but it's all over internet so i just put a 88x31 frame, el wiwi */}
+<Button image="/assets/buttons/misc/miku.gif" alt="This site is Miku approved" />
+<ButtonLink image="/assets/buttons/misc/ezgif2.gif" alt="Swatch" href="https://deltarune.wiki/w/Swatch" />
+<ButtonLink image="/assets/buttons/misc/firefox.gif" alt="Firefox Now!" href="https://www.firefox.com" />
+<ButtonLink image="/assets/buttons/misc/jellyfin.gif" alt="Jellyfin" href="https://jellyfin.org/" />
+<ClickHere /> {/* "Click Here!" Image from the collection, "Thanks" made to finish the joke */}
+<ButtonLink image="/assets/buttons/misc/neovim.gif" alt="Made with neovim" href="https://neovim.io/" />
+<ButtonLink image="/assets/buttons/misc/soulseek.gif" alt="Soulseek" href="https://www.slsknet.org/" />
 
 my button!! (hotlink if you want):
-<Button image="/assets/buttons/benjae.png" href="https://sillydomain.name" alt="benjae!!!" title="benjae!!!"/>
+<ButtonLink image="/assets/buttons/benjae.png" href="https://sillydomain.name" alt="benjae!!!" title="benjae!!!"/>
 
 Things i used:
 - [Catppuccin (Mocha and Latte)](https://github.com/catppuccin)
 - [Astro](https://astro.build/)
 - [Atkinson Hyperlegible Next](https://www.brailleinstitute.org/freefont)
-- maybe some stolen code idk i forgot
+- maybe some stolen code idk i forgot the source of them
 - maybe some stolen ideas (thanks [emi](https://garnix.dev))
 
 [check the source code!!](https://codeberg.org/benjae/pages)

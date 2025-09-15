@@ -1,11 +1,11 @@
 ---
-import Button from './Button.astro';
+import ButtonLink from './ButtonLink.astro';
 import json from '../assets/buttons.json'
 ---
 
 {
 // i stole this
 json.map((button) => (
-	<Button image={button.img} href={button.href} alt={button.alt} />
+	<ButtonLink image={button.img} href={button.href} alt={button.alt} />
 ))
 }
