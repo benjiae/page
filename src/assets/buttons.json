@@ -7,22 +7,12 @@
     {
         "href": "https://lunakitpi.codeberg.page/",
         "img": "/assets/buttons/LunaBTN.png",
-        "alt": "lunakitpi"
-    },
-    {
-        "href": "https://lunahd.neocities.org/",
-        "img": "https://lunahd.neocities.org/assets/88x31/me.png",
-        "alt": "miku"
+        "alt": "luna"
     },
     {
         "href": "https://garnix.dev",
         "img": "https://garnix.dev/assets/88x31/ixhby.png",
         "alt": "ixhby"
-    },
-    {
-        "href": "https://sugar.pages.gay/",
-        "img": "/assets/buttons/sugar.gif",
-        "alt": "sugar's serene place"
     },
     {
         "href": "https://chloes.website",
@@ -35,29 +25,9 @@
         "alt": "sneexy"
     },
     {
-        "href": "https://gayest.gay/",
-        "img": "/assets/buttons/kate.png",
-        "alt": "kate is gay catgirl"
-    },
-    {
         "href": "https://sophari.org",
         "img": "https://sophari.org/img/sophari.gif",
         "alt": "sophari.org"
-    },
-    {
-        "href": "https://maxy.top",
-        "img": "https://maxy.top/static/maxybutton.png",
-        "alt": "max is eepy"
-    },
-    {
-        "href": "https://mystie.dev/",
-        "img": "https://mystie.dev/st/img/mystie_btn.png",
-        "alt": "mystie"
-    },
-    {
-        "href": "https://guigui.aerocity.site",
-        "img": "https://guigui.aerocity.site/88x31/guigui.png",
-        "alt": "#Guigui"
     },
     {
         "href": "https://cosyivy.xyz/",
@@ -67,7 +37,7 @@
     {
         "href": "https://ammienyami.com",
         "img": "https://ammienyami.com/images/buttons/custom/hatsusixty.gif",
-        "alt": "Amy"
+        "alt": "Ammie"
     },
     {
         "href": "https://i1vy.moe",
@@ -77,7 +47,7 @@
     {
         "href": "https://girlthi.ng/~thermia/",
         "img": "https://girlthi.ng/~thermia/img/88x31/thermia.gif",
-        "alt": "thermia's button"
+        "alt": "thermia"
     },
     {
         "href": "https://0xportal.dev",
@@ -92,7 +62,7 @@
     {
         "href": "https://aquamarine.gay",
         "img": "/assets/buttons/aquamarine.gif",
-        "alt": "Aqua's Aquarium"
+        "alt": "aquamarine.gay"
     },
     {
         "href": "https://microspinny.zip",
@@ -102,7 +72,7 @@
     {
         "href": "https://jade-ish.nekoweb.org",
         "img": "https://jade-ish.nekoweb.org/88x31.gif",
-        "alt": "Jade"
+        "alt": "Jade (meli usawi)"
     },
     {
         "href": "https://ielenia.lgbt",

@@ -13,14 +13,13 @@ body {
 	background-size: 40em;
 	animation: bg 120s linear infinite;
 	width: 100lvw;
-	height: 100lvh;
+	height: 98lvh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
 #main {
-	/* background-color: var(--base); */
 	background-color: var(--base);
 	border: 0.15em solid var(--surface0);
 	color: var(--text);
@@ -28,8 +27,8 @@ body {
 	font-size: 1em;
 	text-align: left;
 	padding: 1em;
-	width: 85lvw;
-	height: 90lvh;
+	width: 90%;
+	height: 90%;
 	overflow-y: scroll;
 }
 
@@ -66,6 +65,15 @@ hr {
 	color: var(--subtext0)
 }
 
+.fragment {
+	font-size: 0.5em;
+}
+
+div:target {
+	background-color: color-mix(in srgb, var(--base), var(--peach) 10%);
+	padding-top: 0.1em
+}
+
 input[type="button"] {
 	background-color: var(--crust);
 	color: var(--text);
@@ -88,6 +96,8 @@ input[type="button"]:active {
 		width: 100lvw;
 		height: 100lvh;
 		border: none;
+		padding: 0;
+		margin: 1em;
 	}
 	body {
 		display: block;
