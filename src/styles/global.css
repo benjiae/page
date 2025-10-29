@@ -27,7 +27,7 @@ body {
 	font-size: 1em;
 	text-align: left;
 	padding: 1em;
-	width: 90%;
+	width: 70%;
 	height: 90%;
 	overflow-y: scroll;
 }
@@ -62,7 +62,7 @@ a:visited {
 }
 
 hr {
-	color: var(--subtext0)
+	border-color: var(--overlay0)
 }
 
 .fragment {
