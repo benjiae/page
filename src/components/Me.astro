@@ -3,8 +3,22 @@ import { Image } from 'astro:assets';
 import Niko from '../assets/niko.jpg';
 ---
 
-<div id="niko">
-<Image src={Niko} width=128 alt="Niko from oneshot, a human-adjacent being with blue hair and scarf with glowing yellow eyes and a brown (fill this later), fitting in a green tall hat" /></th>
-<p>^ this niko is me!! (real! fact checked by multiple friends) (<a href="https://bsky.app/profile/argoncrystal.bsky.social/post/3ltxbfyagik2d">art by argoncrystal</a>)</p>
-</div>
+<table id="niko">
+	<tr>
+	<th><Image src={Niko} width=128 alt="Niko from oneshot, a human-adjacent being with blue hair and scarf with glowing yellow eyes and a brown (fill this later), fitting in a green tall hat" /></th>
+		<th><p>haii!! I'm benjae, one of those guys on the internet you find sometimes, <a href="https://pronouns.cc/@benjae">he/him</a>
+			</p>
+			<p>I primarily "enjoy" <a href="things#games">playing games</a> and <a href="things#music">listening to stuff</a> sometimes, besides that uhh idk i'm bored all day lol</p>
+		</th>
+	</tr>
+</table>
+<small>^ this niko is me!! (real! fact checked by multiple friends) (<a href="https://bsky.app/profile/argoncrystal.bsky.social/post/3ltxbfyagik2d">art by argoncrystal</a>)</small>
+
+<style>
+	tr, th, table {
+		background-color: var(--base);
+		border: none;
+		font-weight: normal;
+	}
+</style>
 
