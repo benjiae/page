@@ -25,7 +25,7 @@ echo ".DS_Store" > .gitignore
 git add -- . ':!.gitignore'
 
 # commit static site files and force push to build_branch of the origin
-git commit -m "push.sh"
+git commit -m "$*"
 git remote add origin ssh://git@codeberg.org/benjae/pages.git
 git remote set-url --add --push origin ssh://git@codeberg.org/benjae/pages.git
 git remote set-url --add --push origin git@github.com:benjiae/page.git

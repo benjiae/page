@@ -103,5 +103,11 @@
 		"href": "https://juxgd.codeberg.page",
 		"img": "https://juxgd.codeberg.page/badges/jux.apng",
 		"alt": "Jux"
+	},
+	{
+		"href": "https://ivrry.nekoweb.org/",
+		"img": "https://ivrry.nekoweb.org/assets/images/button.png",
+		"alt": "ivrry"
 	}
+
 ]
