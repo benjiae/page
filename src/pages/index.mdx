@@ -4,31 +4,44 @@ title: "benjae's site"
 description: 'me'
 ---
 import Update from '../components/Update.astro';
-import Me from '../components/Me.astro';
+import Button from '../components/ButtonImg.astro';
+import ButtonLink from '../components/ButtonLink.astro';
+import Buttons from '../components/Buttons.astro';
+import ClickHere from '../components/ClickHere.astro';
 
-# welcomeee :3 :waving: <a href="./" class="fragment">#</a>
+# welcomeee :3 :waving:
 <small>last update was at <Update/>! (utc-3)</small>
 
-<Me />
-
-some stuff i may or may not have made include:
-- [this site!!! waoww!!](https://sillydomain.name)
-- [a twitter and bluesky bot!!!](https://github.com/benjiae/fangame-takes-bot) that somehow hasn't exploded
-- [a geometry dash tool!!](https://github.com/benjiae/gd-icon-swapper)
-- [spotify-currentsong but with last.fm!!](https://github.com/benjiae/lastfm-currentsong)
-- [\^ that thing but with listenbrainz!!!!](https://codeberg.org/benjae/lb-currentsong)
-
-
-<hr />
-
-### for buttons check [/social](/social#buttons)!!
+Hi! i'm [benjae](/about), this is a silly site that has been updated way too many times and i keep being not comfortable with it \
 
 Things i used for this site:
 - [Catppuccin (Mocha and Latte)](https://github.com/catppuccin)
 - [Astro](https://astro.build/)
 - [Atkinson Hyperlegible Next](https://www.brailleinstitute.org/freefont)
 - maybe some stolen code idk i forgot the source of them
-- maybe some stolen ideas (thanks [emi](https://garnix.dev))
-
+- maybe some stolen ideas (thanks [emi](https://garnix.dev) and [noelle](https://ivrry.nekoweb.org/))
 
 [check the source code!!](https://codeberg.org/benjae/pages)
+
+## Buttons!!
+friends!!!
+<Buttons />
+
+<div class="js" id="ivy" style="display:none">
+    <input type="button" value="one hundred ivy buttons" onclick="ivy()">&nbsp;</input>
+    <a href="https://mk.absturztau.be/notes/acgmxepnyvrz01er">(the joke)</a>
+    <br />
+</div>
+
+other stuff!!!
+<ButtonLink image="/assets/buttons/akkowtf.png" href="https://akko.wtf" alt="Luna Nova" /> {/* Grabbed from https://akko.wtf */ }
+<Button image="/assets/buttons/misc/elwiwi.png" alt="el wiwi" /> {/* I don't know the image's source but it's all over internet so i just put a 88x31 frame, el wiwi */}
+<Button image="/assets/buttons/misc/miku.gif" alt="This site is Miku approved" />
+<ButtonLink image="/assets/buttons/misc/ezgif2.gif" alt="Swatch" href="https://deltarune.wiki/w/Swatch" />
+<ButtonLink image="/assets/buttons/misc/firefox.gif" alt="Firefox Now!" href="https://www.firefox.com" />
+<ButtonLink image="/assets/buttons/misc/jellyfin.gif" alt="Jellyfin" href="https://jellyfin.org/" />
+<ClickHere /> {/* "Click Here!" Image from the collection, "Thanks" made to finish the joke */}
+<ButtonLink image="/assets/buttons/misc/neovim.gif" alt="Made with neovim" href="https://neovim.io/" />
+<ButtonLink image="/assets/buttons/misc/soulseek.gif" alt="Soulseek" href="https://www.slsknet.org/" />
+<small>Most of these were grabbed from [The 88x31 GIF Collection](https://cyber.dabamos.de/88x31/), the ones that aren't have a comment in the site's [index.mdx](https://codeberg.org/benjae/pages/src/branch/main/src/pages/index.mdx)</small> \
+<small>The click here button's css is practically stolen from [lyra's blogpost](https://lyra.horse/blog/2025/08/you-dont-need-js/), the idea was just too silly to not do</small>

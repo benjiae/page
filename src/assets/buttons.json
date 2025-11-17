@@ -1,99 +1,99 @@
 [
-    {
-        "href": "https://frizzbees.dev",
-        "img": "https://i.frizzbees.dev/lF4Cr7AY7xVk.png",
-        "alt": "frizzbees.dev"
-    },
-    {
-        "href": "https://lunakitpi.codeberg.page/",
-        "img": "/assets/buttons/LunaBTN.png",
-        "alt": "luna"
-    },
-    {
-        "href": "https://garnix.dev",
-        "img": "https://garnix.dev/assets/88x31/ixhby.png",
-        "alt": "ixhby"
-    },
-    {
-        "href": "https://chloes.website",
-        "img": "/assets/buttons/catwithaclarinet.png",
-        "alt": "ChloeCat"
-    },
-    {
-        "href": "https://synth.download/~sneexy/",
-        "img": "https://synth.download/assets/buttons/sneexy.svg",
-        "alt": "sneexy"
-    },
-    {
-        "href": "https://sophari.org",
-        "img": "https://sophari.org/img/sophari.gif",
-        "alt": "sophari.org"
-    },
-    {
-        "href": "https://cosyivy.xyz/",
-        "img": "https://sillyivy.nekoweb.org/button.gif",
-        "alt": "cosyivy"
-    },
-    {
-        "href": "https://ammienyami.com",
-        "img": "https://ammienyami.com/images/buttons/custom/hatsusixty.gif",
-        "alt": "Ammie"
-    },
-    {
-        "href": "https://i1vy.moe",
-        "img": "/assets/buttons/i1vy.png",
-        "alt": "ivy"
-    },
-    {
-        "href": "https://girlthi.ng/~thermia/",
-        "img": "https://girlthi.ng/~thermia/img/88x31/thermia.gif",
-        "alt": "thermia"
-    },
-    {
-        "href": "https://0xportal.dev",
-        "img": "/assets/buttons/0xPortal.gif",
-        "alt": "0xPortal.dev"
-    },
-    {
-        "href": "https://trinkey.com",
-        "img": "https://trinkey.com/img/88x31.png",
-        "alt": "trinkey"
-    },
-    {
-        "href": "https://aquamarine.gay",
-        "img": "/assets/buttons/aquamarine.gif",
-        "alt": "aquamarine.gay"
-    },
-    {
-        "href": "https://microspinny.zip",
-        "img": "/assets/buttons/microspinny.avif",
-        "alt": "prototype oneshot right next to \"Micro\" in purple text with some dithering between the backgrounds of the two \"sections\" of the image"
-    },
-    {
-        "href": "https://jade-ish.nekoweb.org",
-        "img": "https://jade-ish.nekoweb.org/88x31.gif",
-        "alt": "Jade (meli usawi)"
-    },
-    {
-        "href": "https://ielenia.lgbt",
-        "img": "/assets/buttons/ielenia.png",
-        "alt": "Luna Aria Ielenia"
-    },
-    {
-        "href": "https://potatoe.ca",
-        "img": "https://potatoe.ca/images/88x31/potatoe.png",
-        "alt": "A pixel art of a shiny room of a dragon's den, with a blue-haired black dragoness (Spike) waving hi, with the Potatoe logo at the top left"
-    },
-    {
-        "href": "https://enjarai.dev",
-        "img": "https://enjarai.dev/assets/my-button.png",
-        "alt": "enjarai.dev"
-    },
-    {
-        "href": "https://sapphicyearn.ing",
-        "img": "https://sapphicyearn.ing/images/88x31s/Lily88x31.png",
-        "alt": "Lily"
-    },
+	{
+		"href": "https://frizzbees.dev",
+		"img": "https://i.frizzbees.dev/lF4Cr7AY7xVk.png",
+		"alt": "frizzbees.dev"
+	},
+	{
+		"href": "https://lunakitpi.codeberg.page/",
+		"img": "/assets/buttons/LunaBTN.png",
+		"alt": "luna"
+	},
+	{
+		"href": "https://garnix.dev",
+		"img": "https://garnix.dev/assets/88x31/ixhby.png",
+		"alt": "ixhby"
+	},
+	{
+		"href": "https://chloes.website",
+		"img": "/assets/buttons/catwithaclarinet.png",
+		"alt": "ChloeCat"
+	},
+	{
+		"href": "https://synth.download/~sneexy/",
+		"img": "https://synth.download/assets/buttons/sneexy.svg",
+		"alt": "sneexy"
+	},
+	{
+		"href": "https://sophari.org",
+		"img": "https://sophari.org/img/sophari.gif",
+		"alt": "sophari.org"
+	},
+	{
+		"href": "https://cosyivy.xyz/",
+		"img": "https://sillyivy.nekoweb.org/button.gif",
+		"alt": "cosyivy"
+	},
+	{
+		"href": "https://ammienyami.com",
+		"img": "https://ammienyami.com/images/buttons/custom/hatsusixty.gif",
+		"alt": "Ammie"
+	},
+	{
+		"href": "https://i1vy.moe",
+		"img": "/assets/buttons/i1vy.png",
+		"alt": "ivy"
+	},
+	{
+		"href": "https://girlthi.ng/~thermia/",
+		"img": "https://girlthi.ng/~thermia/img/88x31/thermia.gif",
+		"alt": "thermia"
+	},
+	{
+		"href": "https://0xportal.dev",
+		"img": "/assets/buttons/0xPortal.gif",
+		"alt": "0xPortal.dev"
+	},
+	{
+		"href": "https://trinkey.com",
+		"img": "https://trinkey.com/img/88x31.png",
+		"alt": "trinkey"
+	},
+	{
+		"href": "https://aquamarine.gay",
+		"img": "/assets/buttons/aquamarine.gif",
+		"alt": "aquamarine.gay"
+	},
+	{
+		"href": "https://microspinny.zip",
+		"img": "/assets/buttons/microspinny.avif",
+		"alt": "prototype oneshot right next to \"Micro\" in purple text with some dithering between the backgrounds of the two \"sections\" of the image"
+	},
+	{
+		"href": "https://jade-ish.nekoweb.org",
+		"img": "https://jade-ish.nekoweb.org/88x31.gif",
+		"alt": "Jade (meli usawi)"
+	},
+	{
+		"href": "https://ielenia.lgbt",
+		"img": "/assets/buttons/ielenia.png",
+		"alt": "Luna Aria Ielenia"
+	},
+	{
+		"href": "https://potatoe.ca",
+		"img": "https://potatoe.ca/images/88x31/potatoe.png",
+		"alt": "A pixel art of a shiny room of a dragon's den, with a blue-haired black dragoness (Spike) waving hi, with the Potatoe logo at the top left"
+	},
+	{
+		"href": "https://enjarai.dev",
+		"img": "https://enjarai.dev/assets/my-button.png",
+		"alt": "enjarai.dev"
+	},
+	{
+		"href": "https://sapphicyearn.ing",
+		"img": "https://sapphicyearn.ing/images/88x31s/Lily88x31.png",
+		"alt": "Lily"
+	},
 	{
 		"href": "https://proot.party",
 		"img": "https://proot.party/assets/button.png",
@@ -109,5 +109,4 @@
 		"img": "https://ivrry.nekoweb.org/assets/images/button.png",
 		"alt": "ivrry"
 	}
-
 ]

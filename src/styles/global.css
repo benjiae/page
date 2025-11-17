@@ -1,46 +1,19 @@
 @import url('./colorscheme.css');
 @import url('./fonts.css');
 
-@keyframes bg {
-	from {
-		background-position: 0 0;
-	} to {
-		background-position: 2048px 2048px;
-	}
-}
-
 body {
-	background-size: 40em;
-	animation: bg 120s linear infinite;
-	width: 100lvw;
-	height: 98lvh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-#main {
 	background-color: var(--base);
-	border: 0.15em solid var(--surface0);
-	color: var(--text);
 	font-family: 'Atkinson Hyperlegible Next';
 	font-size: 1em;
+	color: var(--text);
 	text-align: left;
 	padding: 1em;
-	width: 70%;
-	height: 90%;
-	overflow-y: scroll;
 }
 
 table {
 	background-color: var(--crust);
 	border-collapse: collapse;
 	overflow-y: scroll;
-}
-
-td, th {
-	border: var(--overlay0) 2px solid;
-	padding: 0.25em
 }
 
 small {
@@ -61,19 +34,6 @@ a:visited {
 	color: var(--blue)
 }
 
-hr {
-	border-color: var(--overlay0)
-}
-
-.fragment {
-	font-size: 0.5em;
-}
-
-div:target {
-	background-color: color-mix(in srgb, var(--base), var(--peach) 10%);
-	padding-top: 0.1em
-}
-
 input[type="button"] {
 	background-color: var(--crust);
 	color: var(--text);
@@ -90,23 +50,3 @@ input[type="button"]:active {
 	background-color: var(--text);
 	color: var(--crust)
 }
-
-@media screen and (width < 950px) {
-	#main {
-		width: 100lvw;
-		height: 100lvh;
-		border: none;
-		padding: 0;
-		margin: 1em;
-	}
-	body {
-		display: block;
-	}
-}
-
-@media (prefers-reduced-motion: reduce) {
-	body {
-		animation: none
-	}
-}
-
