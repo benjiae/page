@@ -1,25 +1,32 @@
 ---
-
+const { pathname } = Astro.url;
 ---
 <div>
 	<nav>
-	  <a href="/">Home</a>
-	  <a href="/about">About</a>
-	  <a href="/things">Things i like</a>
-	  <a href="/webrings">Webrings</a>
-	  <a href="https://benjae.atabook.org">Guestbook</a>
+		<a aria-current={pathname.slice(1) === '' ? 'page' : 'false' } href="/">Home</a>
+		<a aria-current={pathname.slice(1) === 'about' ? 'page' : 'false' } href="/about">About</a>
+		<a aria-current={pathname.slice(1) === 'things' ? 'page' : 'false' } href="/things">Things i like</a>
+		<a aria-current={pathname.slice(1) === 'webrings' ? 'page' : 'false' } href="/webrings">Webrings</a>
+	  <a aria-current="false" href="https://benjae.atabook.org">Guestbook</a>
 	</nav>
 </div>
 
 <style>
-  div {
+	div {
     background-color: var(--mantle);
 		display: flex;
-		justify-content: space-between;
-		padding: 0.5em;
+		max-height: 1em;
+		width: 25em;
   }
 
-  nav>a {
-	  padding: 0.5em;
-  }
+	nav>a {
+		border-top: 4px solid var(--blue);
+		padding: 2px 6px;
+		color: var(--text);
+	}
+
+	a[aria-current="page"] {
+		border-color: var(--green) !important
+	}
+
 </style>

@@ -1,26 +1,27 @@
 ---
 const { frontmatter } = Astro.props;
-import '../styles/global.css';
-import Header from '../components/Header.astro'
+import "../styles/global.css";
+import Header from "../components/Header.astro";
 ---
 
 <html lang="en">
-  <head>
-    <link href="https://booping.synth.download/@benjae" rel="me">
-	<meta name="fediverse:creator" content="benjae@booping.synth.download" />
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="generator" content={Astro.generator} />
-    <meta name="description" content={frontmatter.description} />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <title>{frontmatter.title}</title>
-  </head>
-  <body>
+	<head>
+		<link href="https://booping.synth.download/@benjae" rel="me" />
+		<meta name="fediverse:creator" content="benjae@booping.synth.download" />
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="generator" content={Astro.generator} />
+		<meta name="description" content={frontmatter.description} />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<title>{frontmatter.title}</title>
+	</head>
+	<body>
 		<Header />
-		<slot />
-  </body>
+		<div id="contents">
+			<slot />
+		</div>
+	</body>
 
-  <style>
-  </style>
+	<style></style>
 </html>

@@ -1,52 +1,59 @@
-@import url('./colorscheme.css');
-@import url('./fonts.css');
+@import url("./colorscheme.css");
+@import url("./fonts.css");
 
 body {
-	background-color: var(--base);
-	font-family: 'Atkinson Hyperlegible Next';
-	font-size: 1em;
-	color: var(--text);
-	text-align: left;
+  background-color: var(--base);
+  font-family: "Atkinson Hyperlegible Next";
+  font-size: 16px;
+  color: var(--text);
+  text-align: left;
+}
+
+#contents {
+	margin-top: 10px;
 	padding: 1em;
+	border: 3px solid var(--lavender);
+	min-width: 25em;
+	min-height: 90vh
 }
 
 table {
-	background-color: var(--crust);
-	border-collapse: collapse;
-	overflow-y: scroll;
+  background-color: var(--crust);
+  border-collapse: collapse;
+  overflow-y: scroll;
 }
 
 small {
-	color: var(--subtext0);
+  color: var(--subtext0);
 }
 
 code {
-	background-color: var(--crust);
-	font-family: monospace;
+  background-color: var(--crust);
+  font-family: monospace;
 }
 
 a {
-	text-decoration: underline;
-	color: var(--sapphire)
+  text-decoration: underline;
+  color: var(--sapphire);
 }
 
 a:visited {
-	color: var(--blue)
+  color: var(--blue);
 }
 
 input[type="button"] {
-	background-color: var(--crust);
-	color: var(--text);
-	border: none;
-	font-size: 1em;
-	margin-top: 1em;
+  background-color: var(--crust);
+  color: var(--text);
+  border: none;
+  font-size: 1em;
+  margin-top: 1em;
 }
 
 input[type="button"]:hover {
-	background-color: var(--surface0);
+  background-color: var(--surface0);
 }
 
 input[type="button"]:active {
-	background-color: var(--text);
-	color: var(--crust)
+  background-color: var(--text);
+  color: var(--crust);
 }
