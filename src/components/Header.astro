@@ -4,9 +4,9 @@ const { pathname } = Astro.url;
 <div>
 	<nav>
 		<a aria-current={pathname.slice(1) === '' ? 'page' : 'false' } href="/">Home</a>
-		<a aria-current={pathname.slice(1) === 'about' ? 'page' : 'false' } href="/about">About</a>
-		<a aria-current={pathname.slice(1) === 'things' ? 'page' : 'false' } href="/things">Things i like</a>
-		<a aria-current={pathname.slice(1) === 'webrings' ? 'page' : 'false' } href="/webrings">Webrings</a>
+		<a aria-current={pathname.slice(1) === 'about/' ? 'page' : 'false' } href="/about">About</a>
+		<a aria-current={pathname.slice(1) === 'things/' ? 'page' : 'false' } href="/things">Things i like</a>
+		<a aria-current={pathname.slice(1) === 'webrings/' ? 'page' : 'false' } href="/webrings">Webrings</a>
 	  <a aria-current="false" href="https://benjae.atabook.org">Guestbook</a>
 	</nav>
 </div>
