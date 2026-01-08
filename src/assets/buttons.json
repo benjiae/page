@@ -66,8 +66,8 @@
 	},
 	{
 		"href": "https://microspinny.zip",
-		"img": "/assets/buttons/microspinny.avif",
-		"alt": "prototype oneshot right next to \"Micro\" in purple text with some dithering between the backgrounds of the two \"sections\" of the image"
+		"img": "/assets/buttons/nikospinny.png",
+		"alt": "A purple moth with big eyes on a darker background with the next \"niko\" besides it"
 	},
 	{
 		"href": "https://jade-ish.nekoweb.org",
@@ -108,5 +108,10 @@
 		"href": "https://ivrry.nekoweb.org/",
 		"img": "https://ivrry.nekoweb.org/assets/images/button.png",
 		"alt": "ivrry"
+	},
+	{
+		"href": "https://pquirrel.neocities.org/",
+		"img": "https://pquirrel.neocities.org/buttons/self_dark.gif",
+		"alt": "pquirrel"
 	}
 ]
