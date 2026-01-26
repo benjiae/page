@@ -55,11 +55,6 @@
 		"alt": "0xPortal.dev"
 	},
 	{
-		"href": "https://trinkey.com",
-		"img": "https://trinkey.com/img/88x31.png",
-		"alt": "trinkey"
-	},
-	{
 		"href": "https://aquamarine.gay",
 		"img": "/assets/buttons/aquamarine.gif",
 		"alt": "aquamarine.gay"
@@ -96,8 +91,8 @@
 	},
 	{
 		"href": "https://proot.party",
-		"img": "https://proot.party/assets/button.png",
-		"alt": "proot party!"
+		"img": "/assets/buttons/strongsand.webp",
+		"alt": "proot party! (strongsand)"
 	},
 	{
 		"href": "https://juxgd.codeberg.page",
