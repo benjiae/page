@@ -1,7 +1,6 @@
 ---
 const { frontmatter } = Astro.props;
 import "../styles/global.css";
-import Header from "../components/Header.astro";
 ---
 
 <html lang="en">
@@ -17,11 +16,7 @@ import Header from "../components/Header.astro";
 		<title>{frontmatter.title}</title>
 	</head>
 	<body>
-		<Header />
 		<div id="contents">
 			<slot />
 		</div>
 	</body>
-
-	<style></style>
-</html>

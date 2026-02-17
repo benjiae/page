@@ -1,0 +1,24 @@
+---
+
+---
+<img src="/assets/images/emojis/waving.gif" alt="A yellow circle with a black smiley face waving with an oversized (also yellow) left hand">
+
+<style>
+	img {
+		position: relative;
+		top: 5px;
+		transition: transform 0.5s
+	}
+	img:hover {
+		transform: scale(125%)
+	}
+
+	@media (prefers-reduced-motion) {
+		img {
+			content: url("/assets/images/emojis/waving.webp")
+		}
+		img:hover {
+			content: url("/assets/images/emojis/waving.gif")
+		}
+	}
+</style>

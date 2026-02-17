@@ -1,46 +1,78 @@
 ---
-layout: ../layouts/MDLayout.astro
+layout: ../layouts/Layout.astro
 title: "benjae's site"
 description: 'me'
 ---
-import Update from '../components/Update.astro';
-import Button from '../components/ButtonImg.astro';
-import ButtonLink from '../components/ButtonLink.astro';
-import Buttons from '../components/Buttons.astro';
-import ClickHere from '../components/ClickHere.astro';
+import Waving from '../components/Waving.astro'
+import Niko from '../components/Niko.astro'
+import Buttons from '../components/Buttons.astro'
+import ButtonLink from '../components/ButtonLink.astro'
+import Button from '../components/ButtonImg.astro'
+import ClickHere from '../components/ClickHere.astro'
+import FediRing from '../components/FediRing.astro'
+import TouhouWebring from '../components/TouhouWebring.astro'
 
-# welcomeee :3 :waving:
-<small>last update was at <Update/>! (utc-3)</small>
-
-Hi! i'm [benjae](/about), this is a silly site that has been updated way too many times and i keep being not comfortable with it
-
-Things i used for this site:
-- [Catppuccin (Mocha and Latte)](https://github.com/catppuccin)
-- [Astro](https://astro.build/)
-- [Atkinson Hyperlegible Next](https://www.brailleinstitute.org/freefont)
-- maybe some stolen code idk i forgot the source of them
-- maybe some stolen ideas (thanks [emi](https://garnix.dev) and [noelle](https://ivrry.nekoweb.org/))
-
-[check the source code!!](https://codeberg.org/benjae/pages)
-
-## Buttons!!
-friends!!!
-<Buttons />
-
-<div class="js" id="ivy" style="display:none">
-    <input type="button" value="one hundred ivy buttons" onclick="ivy()">&nbsp;</input>
-    <a href="https://mk.absturztau.be/notes/acgmxepnyvrz01er">(the joke)</a>
-    <br />
+<div class="section" id="welcome">
+# Hello!! <Waving /> <small><a href="#">#</a></small> <small style="float: right; font-size: 0.5em;">Sign my [guestbook](https://benjae.atabook.org)!</small>
+Welcome to my site! i'm [benjae](#about) (more information below), and this is the product of me bruteforcing css over and over again
 </div>
 
-other stuff!!!
-<ButtonLink image="/assets/buttons/akkowtf.png" href="https://akko.wtf" alt="Luna Nova" /> {/* Grabbed from https://akko.wtf */ }
+<div class="section" id="about">
+# about me!!! <small><a href="#about">#</a></small>
+As the text above says, i'm indeed a real person (wow!), specifically, a random [guy](https://pronouns.cc/@benjae) on the internet that likes some stuff, such as:
+<div style="display: flex; flex-direction: row; gap: 1em;">
+    <img src="/assets/images/niko.webp" width="128" height="128" alt="Niko from oneshot, a human-like figure with cat ears, purple hair, blue scarf and a brown overcoat putting a green hat on themselves"></img> Art by [Argon](https://bsky.app/profile/argoncrystal.bsky.social/post/3ltxbfyagik2d)!
+    - Niko from [OneShot](https://store.steampowered.com/app/420530/OneShot/)!! (the thing on the left) they're so cool ~~i wish i looked like that~~
+    - uhh playing games sometimes idk, i [speedran](https://www.speedrun.com/users/benjae) some stuff and have like 199 berries in [Celeste](https://store.steampowered.com/app/504230/Celeste/), i play rhythm games too sometimes (including iidx)
+    - fucking around on computers! (most of the time) that's how this site was made afterall ~~(with a lot of pain aswell)~~
+</div>
+</div>
+
+<div class="section" id="buttons">
+# Buttons! <small><a href="#buttons">#</a></small>
+- My button!!
+<Button image="/assets/buttons/benjae.png" alt="Ben" /> <textarea style="max-width: 40em; margin-left: 1em;"><a href="https://sillydomain.name"><img src="https://sillydomain.name/assets/buttons/benjae.png"></img></a></textarea>
+<details>
+<summary>Friends!! or cool creatures generally</summary>
+<Buttons />
+</details>
+<details>
+<summary>Cool things!</summary>
 <Button image="/assets/buttons/misc/elwiwi.png" alt="el wiwi" /> {/* I don't know the image's source but it's all over internet so i just put a 88x31 frame, el wiwi */}
 <Button image="/assets/buttons/misc/miku.gif" alt="This site is Miku approved" />
 <ButtonLink image="/assets/buttons/misc/ezgif2.gif" alt="Swatch" href="https://deltarune.wiki/w/Swatch" />
 <ButtonLink image="/assets/buttons/misc/jellyfin.gif" alt="Jellyfin" href="https://jellyfin.org/" />
 <ClickHere /> {/* "Click Here!" Image from the collection, "Thanks" made to finish the joke */}
 <ButtonLink image="/assets/buttons/misc/neovim.gif" alt="Made with neovim" href="https://neovim.io/" />
-<ButtonLink image="/assets/buttons/misc/soulseek.gif" alt="Soulseek" href="https://www.slsknet.org/" />
-<small>Most of these were grabbed from [The 88x31 GIF Collection](https://cyber.dabamos.de/88x31/), the ones that aren't have a comment in the site's [index.mdx](https://codeberg.org/benjae/pages/src/branch/main/src/pages/index.mdx)</small> \
-<small>The click here button's css is basically stolen from [lyra's blogpost](https://lyra.horse/blog/2025/08/you-dont-need-js/), the idea was just too silly to not do</small>
+<ButtonLink image="/assets/buttons/misc/soulseek.gif" alt="Soulseek" href="https://www.slsknet.org/" /><br /> 
+</details>
+
+<small>Most of these were grabbed from [The 88x31 GIF Collection](https://cyber.dabamos.de/88x31/), the ones that aren't have a comment in this site's [index.mdx](https://codeberg.org/benjae/pages/src/branch/main/src/pages/index.mdx)</small><br />
+<small>The click here button's css is basically stolen from [lyra's blogpost](https://lyra.horse/blog/2025/08/you-dont-need-js/), the idea was just too silly to not do it</small>
+</div>
+
+<div class="section" id="webrings">
+# Webrings! <small><a href="#webrings">#</a></small>
+<small>at least 2 of them</small>
+<br />
+
+<div id="wr" style="display: flex; gap: 1em;">
+<TouhouWebring />
+<FediRing />
+</div>
+</div>
+
+<div class="section" id="links">
+# links!! <small><a href="#links">#</a></small>
+- uhh i have a [fedi](https://booping.synth.download/@benjae) account and a [bluesky](https://bsky.app/profile/sillydomain.name) account i almost never use
+- for more "list" stuff uh here's my [steam](https://steamcommunity.com/id/gentoo-linux), [listenbrainz](https://listenbrainz.org/user/benjae/) and [anilist](https://anilist.co/user/benjae/) (which i last modified in uh "a while" at least)
+- and lastly, for contact i have [email](mailto:contact@sillydomain.name) (of course), [xmpp](xmpp:benjae@snug.moe), [discord](https://discord.com/users/644655968969293826) and signal (ask!)
+</div>
+
+<div class="section" id="credits">
+# credits!! <small><a href="#credits">#</a></small>
+this site is (half-jokingly) plagiarized from [natalie](https://mocha.pages.gay/) (but it's ok because i have [permission](/assets/images/plagiarism.webp) to do so), using stuff from:
+- [Catppuccin](https://catppuccin.com), particularly Mocha and Latte
+- [Atkinson Hyperlegible Next](https://www.brailleinstitute.org/freefont/), it's a pretty cool font!
+- [Astro](https://astro.build), idk i got used to it
+</div>

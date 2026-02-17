@@ -1,5 +1,4 @@
 ---
-import { Image } from 'astro:assets';
 interface Props {
   image: string
   alt: string
@@ -8,7 +7,7 @@ interface Props {
 const { image, alt, ...props } = Astro.props
 ---
 <a target="_blank" {...props}>
-  <Image src={image} alt={alt} width=88 height=31 title={alt} loading="eager"/>
+  <img src={image} alt={alt} width=88 height=31 title={alt} loading="eager"/>
 </a>
 <style>
   a {

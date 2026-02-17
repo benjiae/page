@@ -1,59 +1,71 @@
-@import url("./colorscheme.css");
-@import url("./fonts.css");
+@import url('colorscheme.css');
+
+@keyframes background {
+	from {
+		background-position: -1024px -1024px
+	} to {
+		background-position: 0 0
+	}
+}
 
 body {
-  background-color: var(--base);
-  font-family: "Atkinson Hyperlegible Next";
-  font-size: 16px;
-  color: var(--text);
-  text-align: left;
+	color: var(--text);
+	font-family: 'Atkinson Hyperlegible Next', sans-serif;
+	animation: background 25s infinite linear;
 }
 
-#contents {
-	margin-top: 10px;
-	padding: 1em;
-	border: 3px solid var(--lavender);
-	min-width: 25em;
-	min-height: 90vh
+ul {
+	margin-left: -1em;
 }
 
-table {
-  background-color: var(--crust);
-  border-collapse: collapse;
-  overflow-y: scroll;
+li {
+	margin-bottom: 0.5em;
 }
 
 small {
-  color: var(--subtext0);
+	font-size: 0.75em;
+	font-weight: normal;
+	color: var(--subtext0)
 }
 
-code {
-  background-color: var(--crust);
-  font-family: monospace;
+textarea {
+	border-color: var(--crest);
+	background-color: var(--base);
+	color: var(--text)
 }
 
-a {
-  text-decoration: underline;
-  color: var(--sapphire);
+summary {
+	margin-bottom: 1em;
+}
+
+.section {
+	background-color: var(--mantle);
+	border: 4px var(--lavender) solid;
+	padding-left: 1em;
+	padding-bottom: 1em;
+	max-width: 50em;
+	margin: auto;
+	margin-bottom: 2em;
+	padding-right: 2em;
+}
+
+.section:target {
+	border-color: var(--peach)
 }
 
 a:visited {
-  color: var(--blue);
+	color: var(--mauve);
 }
 
-input[type="button"] {
-  background-color: var(--crust);
-  color: var(--text);
-  border: none;
-  font-size: 1em;
-  margin-top: 1em;
+a:link {
+	color: var(--blue);
 }
 
-input[type="button"]:hover {
-  background-color: var(--surface0);
-}
-
-input[type="button"]:active {
-  background-color: var(--text);
-  color: var(--crust);
+@media (prefers-reduced-motion: reduce) {
+	body {
+		animation-play-state: paused
+	}
+	summary::after {
+		content: " (possible motion)"
+	}
 }

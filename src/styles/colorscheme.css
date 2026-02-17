@@ -1,4 +1,7 @@
 @media (prefers-color-scheme: dark) {
+	body {
+		background: url("/assets/bg-mocha.webp")
+	}
   :root {
     --rosewater: #f5e0dc;
     --flamingo: #f2cdcd;
@@ -29,6 +32,9 @@
   }
 }
 @media (prefers-color-scheme: light) {
+	body {
+		background: url("/assets/bg-latte.webp")
+	}
   :root {
     --rosewater: #dc8a78;
     --flamingo: #dd7878;
@@ -57,12 +63,4 @@
     --mantle: #e6e9ef;
     --crust: #dce0e8;
   }
-}
-
-.blue {
-  color: var(--blue)
-}
-
-.red {
-  color: var(--red)
 }
