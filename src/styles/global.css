@@ -10,6 +10,8 @@
 
 body {
 	color: var(--text);
+	background-color: var(--base);
+	background-attachment: fixed;
 	font-family: 'Atkinson Hyperlegible Next', sans-serif;
 	animation: background 25s infinite linear;
 }
