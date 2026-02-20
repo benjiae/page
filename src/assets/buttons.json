@@ -100,13 +100,18 @@
 		"alt": "Jux"
 	},
 	{
-		"href": "https://ivrry.nekoweb.org/",
-		"img": "https://ivrry.nekoweb.org/assets/images/button.png",
-		"alt": "ivrry"
-	},
-	{
 		"href": "https://pquirrel.neocities.org/",
 		"img": "https://pquirrel.neocities.org/buttons/self_dark.gif",
 		"alt": "pquirrel"
+	},
+	{
+		"href": "https://eeep.ee",
+		"img": "https:/eeep.ee/button",
+		"alt": "twemoji's fox emoji but in silver"
+	},
+	{
+		"href": "https://ivrry.nekoweb.org/",
+		"img": "https://ivrry.nekoweb.org/assets/images/button.png",
+		"alt": "ivrry"
 	}
 ]

@@ -33,7 +33,8 @@ small {
 textarea {
 	border-color: var(--crest);
 	background-color: var(--base);
-	color: var(--text)
+	color: var(--text);
+	width: 100%;
 }
 
 summary {
