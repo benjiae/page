@@ -3,7 +3,9 @@
 @keyframes background {
 	from {
 		background-position: -1024px -1024px
-	} to {
+	}
+
+	to {
 		background-position: 0 0
 	}
 }
@@ -14,6 +16,10 @@ body {
 	background-attachment: fixed;
 	font-family: 'Atkinson Hyperlegible Next', sans-serif;
 	animation: background 25s infinite linear;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 ul {
@@ -47,8 +53,6 @@ summary {
 	padding-left: 1em;
 	padding-bottom: 1em;
 	max-width: 50em;
-	margin: auto;
-	margin-bottom: 2em;
 	padding-right: 2em;
 }
 
@@ -68,6 +72,7 @@ a:link {
 	body {
 		animation-play-state: paused
 	}
+
 	summary::after {
 		content: " (possible motion)"
 	}

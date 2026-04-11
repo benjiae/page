@@ -5,9 +5,9 @@
 		"alt": "frizzbees.dev"
 	},
 	{
-		"href": "https://lunakitpi.codeberg.page/",
+		"href": "https://slugcats.moe",
 		"img": "/assets/buttons/LunaBTN.png",
-		"alt": "luna"
+		"alt": "luniya"
 	},
 	{
 		"href": "https://garnix.dev",
@@ -15,12 +15,7 @@
 		"alt": "ixhby"
 	},
 	{
-		"href": "https://chloes.website",
-		"img": "/assets/buttons/catwithaclarinet.png",
-		"alt": "ChloeCat"
-	},
-	{
-		"href": "https://synth.download/~sneexy/",
+		"href": "https://synth.download/~sneexy",
 		"img": "https://synth.download/assets/buttons/sneexy.svg",
 		"alt": "sneexy"
 	},
@@ -30,29 +25,24 @@
 		"alt": "sophari.org"
 	},
 	{
-		"href": "https://cosyivy.xyz/",
-		"img": "https://sillyivy.nekoweb.org/button.gif",
-		"alt": "cosyivy"
+		"href": "https://sapphicyearn.ing",
+		"img": "https://sapphicyearn.ing/images/88x31s/Lily88x31.png",
+		"alt": "Lily"
 	},
 	{
-		"href": "https://ammienyami.com",
-		"img": "https://ammienyami.com/images/buttons/custom/hatsusixty.gif",
-		"alt": "Ammie"
+		"href": "https://eeep.ee",
+		"img": "https://eeep.ee/button",
+		"alt": "twemoji's fox emoji but in silver"
+	},
+	{
+		"href": "https://jade-ish.nekoweb.org",
+		"img": "https://jade-ish.nekoweb.org/88x31.gif",
+		"alt": "Jade (meli usawi)"
 	},
 	{
 		"href": "https://i1vy.moe",
 		"img": "/assets/buttons/i1vy.png",
 		"alt": "ivy"
-	},
-	{
-		"href": "https://girlthi.ng/~thermia/",
-		"img": "https://girlthi.ng/~thermia/img/88x31/thermia.gif",
-		"alt": "thermia"
-	},
-	{
-		"href": "https://0xportal.dev",
-		"img": "/assets/buttons/0xPortal.gif",
-		"alt": "0xPortal.dev"
 	},
 	{
 		"href": "https://aquamarine.gay",
@@ -65,9 +55,9 @@
 		"alt": "A purple moth with big eyes on a darker background with the next \"niko\" besides it"
 	},
 	{
-		"href": "https://jade-ish.nekoweb.org",
-		"img": "https://jade-ish.nekoweb.org/88x31.gif",
-		"alt": "Jade (meli usawi)"
+		"href": "https://chloes.website",
+		"img": "/assets/buttons/catwithaclarinet.png",
+		"alt": "ChloeCat"
 	},
 	{
 		"href": "https://ielenia.lgbt",
@@ -80,19 +70,14 @@
 		"alt": "A pixel art of a shiny room of a dragon's den, with a blue-haired black dragoness (Spike) waving hi, with the Potatoe logo at the top left"
 	},
 	{
-		"href": "https://enjarai.dev",
-		"img": "https://enjarai.dev/assets/my-button.png",
-		"alt": "enjarai.dev"
-	},
-	{
-		"href": "https://sapphicyearn.ing",
-		"img": "https://sapphicyearn.ing/images/88x31s/Lily88x31.png",
-		"alt": "Lily"
-	},
-	{
 		"href": "https://proot.party",
 		"img": "/assets/buttons/strongsand.webp",
-		"alt": "proot party! (strongsand)"
+		"alt": "proot party!"
+	},
+	{
+		"href": "https://pquirrel.neocities.org",
+		"img": "https://pquirrel.neocities.org/buttons/self_dark.gif",
+		"alt": "pquirrel"
 	},
 	{
 		"href": "https://juxgd.codeberg.page",
@@ -100,18 +85,8 @@
 		"alt": "Jux"
 	},
 	{
-		"href": "https://pquirrel.neocities.org/",
-		"img": "https://pquirrel.neocities.org/buttons/self_dark.gif",
-		"alt": "pquirrel"
-	},
-	{
-		"href": "https://eeep.ee",
-		"img": "https://eeep.ee/button",
-		"alt": "twemoji's fox emoji but in silver"
-	},
-	{
-		"href": "https://ivrry.nekoweb.org/",
-		"img": "https://ivrry.nekoweb.org/assets/images/button.png",
-		"alt": "ivrry"
+		"href": "https://cosyivy.xyz",
+		"img": "https://sillyivy.nekoweb.org/button.gif",
+		"alt": "cosyivy"
 	}
 ]

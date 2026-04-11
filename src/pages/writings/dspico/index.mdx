@@ -1,0 +1,31 @@
+---
+layout: ../../../layouts/Layout.astro
+title: "Various DSpico things"
+description: "i got a DSpico and wanted to talk about it"
+---
+<div class="section" id="main">
+# Various DSpico things <small style="float: right; font-size: 0.5em;">[Go back!](../)</small>
+~~i finally wrote something damn~~ \
+haii!! Ok so I recently (like 2 days ago as of writing) got a [DSpico](https://www.lnh-team.org/), and wanted to share some stuff I had issues with or just wanted to do!! hopefully this helps someone aswell
+
+## Getting it to work on the first place
+### Regarding BlocksDS / Wonderful
+While the wonderful toolchain's pacman installs in `/opt`, it doesn't run as root so if you're in an arch-based distro you can just have it in there, originally I used the docker container and it was fucking painful please don't do that 
+### pico-launcher doesn't start
+#### White screen after running the cartridge
+Apparently the files on my `sd:/_pico` folder were wrong, so i recompiled pico-loader and put them back in there and it magically worked again
+#### "Failed to mount SD card" error
+Your SD card is either probably dying or you forgot to DLDI patch `default.nds`, that took me a while to realize lol
+
+## Cool stuff you can do with it
+### ntrboot
+As of now, to use ntrboot with the DSpico you can either dedicate it entirely just for that or use [edo's fork of it](https://github.com/edo9300/DSpico-firmware), I'll probably forget to update this if the [pull request](https://github.com/LNH-team/DSpico-firmware/pull/8) gets merged so check that first. \
+To get the `ntrboot.nds` file for the 3ds you can use the [firm-to-nds](https://github.com/amt911/firm-to-nds) tool, I personally use GodMode9 as my tool of choice, but its size leaves me unable to also use WRFuxxed, which i won't need because my 2ds is already modded and for another cool thing which is in the next section
+### Editing what the consoles say about the cartridge
+For this, you have to build the bootloader (so the rest of the firmware aswell): \
+First, get your image of choice, and make it a 32x32 bmp file with 16 colors (good luck, i forgot what i used lol), then, you have to edit lines 15 through 17 on the bootloader's make file, and build the rest of the firmware as usual. \
+If your 3ds still says DSpico by LNH team, you have to clear the home menu cache, for this i just installed [Cthulhu](https://db.universal-team.net/3ds/cthulhu) and while it failed, it still updated what i wanted it to say so yippee (probably due to extended memory? i don't know)
+
+## really mini review
+It's cool!! I can fuck around with my 2ds and suffer no consequences at all now, and the games/homebrew i tried work well :3 (for $6 on aliexpress this was a steal)
+</div>
