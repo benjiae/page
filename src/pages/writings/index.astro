@@ -1,12 +1,13 @@
 ---
 // Shamelessly stolen from https://docs.astro.build/en/guides/content-collections/#using-content-in-astro-templates
+import Layout from '@layouts/HTMLLayout.astro';
 import { getCollection, getEntry } from 'astro:content';
-import '@styles/global.css';
 const posts = (await getCollection('writings')).sort(
   (a,b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
 ---
 
+<Layout title="Miscelaneous yaps" description="the place where i yap">
 <div class="section" id="main">
 <h1>Miscelaneous yaps <small style="float: right; font-size: 0.5em;"><a href="../">Go back!</a></small></h1>
 <p>The place where I decide to talk for more than 2 lines<br>I may or may not actually post here</p>
@@ -16,3 +17,4 @@ const posts = (await getCollection('writings')).sort(
 ))}
 </ul>
 </div>
+</Layout>

@@ -1,7 +1,7 @@
 ---
 // Shamelessly stolen from https://docs.astro.build/en/guides/content-collections/#generating-routes-from-content
 import { getCollection, render } from 'astro:content';
-import '@styles/global.css'
+import Layout from '@layouts/HTMLLayout.astro';
 export async function getStaticPaths() {
   const posts = await getCollection('writings');
   return posts.map(post => ({
@@ -12,7 +12,9 @@ export async function getStaticPaths() {
 const { post } = Astro.props;
 const { Content } = await render(post);
 ---
+<Layout title={post.data.title} description={post.data.description}>
 <div class="section" id="main">
 <h1>{post.data.title} <small style="float: right; font-size: 0.5em;"><a href="/writings">Go back!</a></small></h1>
 <Content />
 </div>
+</Layout>
