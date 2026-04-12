@@ -37,7 +37,7 @@ small {
 }
 
 textarea {
-	border-color: var(--crest);
+	border-color: var(--overlay0);
 	background-color: var(--base);
 	color: var(--text);
 	width: 100%;
@@ -52,7 +52,8 @@ summary {
 	border: 4px var(--lavender) solid;
 	padding-left: 1em;
 	padding-bottom: 1em;
-	max-width: 50em;
+	margin-bottom: 1em;
+	width: 50em;
 	padding-right: 2em;
 }
 
