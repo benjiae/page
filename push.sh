@@ -26,5 +26,4 @@ git add -- . ':!.gitignore'
 git commit -m "push script: $*"
 git remote add origin ssh://git@codeberg.org/benjae/pages.git
 git remote set-url --add --push origin ssh://git@codeberg.org/benjae/pages.git
-git remote set-url --add --push origin git@github.com:benjiae/page.git
 git push --force origin $build_branch

@@ -1,5 +1,5 @@
 ---
-const { frontmatter } = Astro.props;
+const { title, description } = Astro.props;
 import "../styles/global.css";
 ---
 
@@ -12,9 +12,9 @@ import "../styles/global.css";
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="generator" content={Astro.generator} />
-		<meta name="description" content={frontmatter.description} />
+		<meta name="description" content={description} />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<title>{frontmatter.title}</title>
+		<title>{title}</title>
 	</head>
 	<body>
 		<div id="contents">
