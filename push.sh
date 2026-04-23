@@ -2,6 +2,7 @@
 # i stole this from https://codeberg.org/Codeberg/pages-server/issues/59
 build_directory="dist"
 build_branch="pages"
+message=$(git log -1 --format=%B)
 
 # delete previous site built, if it exists
 if [ -d "$build_directory" ]; then
@@ -23,7 +24,7 @@ git checkout -b $build_branch
 git add -- . ':!.gitignore'
 
 # commit static site files and force push to build_branch of the origin
-git commit -m "push script: $*"
+git commit -m "push script: $message"
 git remote add origin ssh://git@codeberg.org/benjae/pages.git
 git remote set-url --add --push origin ssh://git@codeberg.org/benjae/pages.git
 git push --force origin $build_branch
