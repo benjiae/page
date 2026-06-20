@@ -1,0 +1,38 @@
+---
+// Shamelessly stolen from https://docs.astro.build/en/guides/content-collections/#using-content-in-astro-templates
+import Layout from '@layouts/HTMLLayout.astro';
+import { getCollection, getEntry } from 'astro:content';
+const posts = (await getCollection('writings')).sort(
+  (a,b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+---
+
+<Layout title="Miscelaneous yaps" description="the place where i yap">
+<h1>Miscelaneous yaps</h1>
+<p>The place where I decide to talk for more than 2 lines!</p>
+{posts.map(post => (
+    <div class="post">
+        <a href={`/blog/${post.id}`}>{post.data.title}</a> ({post.data.pubDate.toDateString()})<br/>
+        {post.data.tags.map(tag => (
+        <span class="tag">{tag}</span>
+        ))}
+    </div>
+))}
+<style>
+  .tag {
+    background-color: var(--text);
+    color: var(--base);
+    margin-right: 1em;
+    padding: 1px 6px;
+    border: 2px solid var();
+    font-family: "Atkinson Hyperlegible Mono", monospace
+  }
+
+  .post {
+    background-color: var(--crust);
+    border: 2px solid var(--blue);
+    padding: 1em;
+    line-height: 2em;
+  }
+</style>
+</Layout>
