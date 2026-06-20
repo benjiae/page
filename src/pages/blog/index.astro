@@ -10,6 +10,7 @@ const posts = (await getCollection('writings')).sort(
 <Layout title="Miscelaneous yaps" description="the place where i yap">
 <h1>Miscelaneous yaps</h1>
 <p>The place where I decide to talk for more than 2 lines!</p>
+<p>there's an rss <a href="/blog/feed.xml">here :3</a></p>
 {posts.map(post => (
     <div class="post">
         <a href={`/blog/${post.id}`}>{post.data.title}</a> ({post.data.pubDate.toDateString()})<br/>
