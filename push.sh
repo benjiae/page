@@ -1,4 +1,4 @@
-#! /bin/bash
+#! /usr/bin/env bash
 # i stole this from https://codeberg.org/Codeberg/pages-server/issues/59
 build_directory="dist"
 build_branch="pages"
