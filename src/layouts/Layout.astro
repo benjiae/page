@@ -15,6 +15,12 @@ import Header from "@components/Header.astro"
 		<meta name="generator" content={Astro.generator} />
 		<meta name="description" content={frontmatter.description} />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link
+    rel="alternate"
+    type="application/rss+xml"
+    title="{frontmatter.title}"
+    href="https://sillydomain.name/blog/feed.xml"
+    />
 		<title>{frontmatter.title}</title>
 	</head>
 	<body>

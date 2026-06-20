@@ -6,9 +6,9 @@ import mdx from '@astrojs/mdx';
 export default defineConfig({
 	site: 'https://sillydomain.name',
 	integrations: [mdx({
-    syntaxHighlight: 'shiki',
-    shikiConfig: {
-      theme: 'catppuccin-macchiato'
-    }
-  })]
+	   syntaxHighlight: 'shiki',
+	   shikiConfig: {
+	     theme: 'catppuccin-macchiato'
+	   }
+	 })]
 });
