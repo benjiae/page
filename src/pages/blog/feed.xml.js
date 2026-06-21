@@ -14,7 +14,7 @@ export async function GET(context) {
     for (const post of posts) {
         const { Content } = await render(post);
         const content = await container.renderToString(Content);
-        const link = new URL(`/posts/${post.id}`, context.url.origin).toString();    
+        const link = new URL(`/blog/${post.id}`, context.url.origin).toString();    
         items.push({ ...post.data, link, content });
     }
 
