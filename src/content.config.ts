@@ -1,7 +1,7 @@
 // Shamelessly stolen from https://docs.astro.build/en/guides/content-collections/#generating-routes-from-content 
 import { defineCollection } from 'astro:content';
 
-import { glob, file } from 'astro/loaders';
+import { glob } from 'astro/loaders';
 
 import { z } from 'astro/zod';
 

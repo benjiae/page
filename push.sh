@@ -10,8 +10,10 @@ if [ -d "$build_directory" ]; then
   rm -rf $build_directory
 fi
 
+echo "pushing this folder"
 git push
 
+echo "starting the other one"
 # generate static site
 npm run build
 
