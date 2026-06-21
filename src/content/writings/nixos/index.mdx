@@ -1,0 +1,56 @@
+---
+layout: ../../../layouts/Blog.astro
+title: "i set up nixos"
+description: "oh my god it's over"
+tags: ["life", "code"]
+pubDate: 06/21/26 17:52
+---
+Haiii!! it's been a while (I don't do that many things,,) <small>I promise not every post will start like this</small>
+
+I recently (like 1.5 weeks ago?) decided to install NixOS on my main computer again after [breaady](https://breaady.dev/) (very cool guy btw) showed me its ~~horrors~~ wonders and I wanted to describe my experience with it, considering this is my third attempt and the first one where I didn't give up immediately (and also to revive this section of my site)
+## The setup
+I'm currently running a flake (which you can see [here](https://codeberg.org/benjae/nix-flake)) with symlinks for my dotfiles in a private repository, I decided against Home Manager because:
+1. I didn't want to rewrite all my configs into nix
+2. It just felt inconvenient
+3. Home Manager was also the main reason I gave up on NixOS during my 2 previous attempts
+
+To prepare this install, breaady helped me with my struggles (such as setting up overrides for packages such as Vesktop and also supporting emotionally /hj), i'm currently using:
+- Niri (with sodiboo's [flake](https://github.com/sodiboo/niri-flake) for it), with an experimental [tearing fork](https://github.com/urayde/niri) as my window manager,
+- Noctalia v5 (I really didn't want to set up waybar <small>and fuzzel and swaync and awww and swayidle and swaylock and-</small>) as my shell,
+- SDDM (with the catppuccin theme) as my display manager,
+- Stow to manage my configuration files
+
+## The struggles
+This section is for me to mention some issues I had that could be common-ish enough for others to also struggle with:
+
+Besides the aforementioned Vesktop issue (where you can see the solution [here](https://codeberg.org/benjae/nix-config/src/branch/main/config/desktop/social.nix)), I also had these issues:
+- Cargo packages not fetching dependencies: this issue disappeared when I disabled lix from my config, which is weird but at least this doesn't happen anymore.
+- OBS not having nvenc / enabling CUDA: this could very easily be fixed by reading the wiki, but this also got me to enable cuda system wide[^1], and it's _very_ important to also enable the binary cache (remember that you need to rebuild at least once for it to work!)
+- Properly theming KDE applications: For this, I had to build the equivalent of the AUR's [qt6ct-kde](https://aur.archlinux.org/packages/qt6ct-kde) as an override for qt6ct, you can find an example [here](https://codeberg.org/benjae/nix-config/src/commit/a0b6dff12447efb96352ac71a65a3d99e6e76f7d/config/desktop/niri.nix#L37).
+- Dolphin doesn't have an application menu: this is also an issue in Arch, but on NixOS there's another solution, the [wiki](https://wiki.nixos.org/wiki/Dolphin) mentions an overlay you could use, but as of this post's writing it's broken[^2] so i'm using MattiDragon's fork of the overlay, and to fix it you just enable the overlay and install dolphin! way easier than searching 4 arch forum posts 5 reddit posts and 3 github issues for a proper fix.
+- Using dolphin as a file picker: I got this to work by using the following snippet: (the important line is the `FileChooser` one but not specifying the other ones _might_ lead to your system just not using the other desktop portals)
+``` nix
+xdg.portal = {
+	config.niri = {
+		default = [
+			"gnome"
+			"gtk"
+		];
+		"org.freedesktop.impl.portal.FileChooser" = lib.mkForce "kde";
+		"org.freedesktop.impl.portal.Notification" = "gtk";
+		"org.freedesktop.impl.portal.Access" = "gtk";
+		"org.freedesktop.impl.portal.Secret" = "gnome-keyring";
+	};
+	extraPortals = [
+		pkgs.kdePackages.xdg-desktop-portal-kde
+		pkgs.xdg-desktop-portal-gnome
+		pkgs.gnome-keyring
+	];
+};
+```
+
+## Conclusion
+And that's pretty much it! I didn't have a horrible experience this time, and it's nice to be able to just skip the whole "setting up /etc configs" and "installing packages" part of an installation, and it also made me properly manage my dotfiles! Overall i think it's a good change of pace from what i was used to from Arch ([comma](https://github.com/nix-community/comma) I love you so much). Thanks for reading! ~~See y'all in like uh half a year~~
+
+[^1]: https://codeberg.org/benjae/nix-config/src/commit/a0b6dff12447efb96352ac71a65a3d99e6e76f7d/hosts/kazami/system.nix#L4
+[^2]: https://github.com/rumboon/dolphin-overlay/issues/6

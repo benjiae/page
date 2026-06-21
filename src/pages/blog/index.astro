@@ -1,7 +1,7 @@
 ---
 // Shamelessly stolen from https://docs.astro.build/en/guides/content-collections/#using-content-in-astro-templates
 import Layout from '@layouts/HTMLLayout.astro';
-import { getCollection, getEntry } from 'astro:content';
+import { getCollection } from 'astro:content';
 const posts = (await getCollection('writings')).sort(
   (a,b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
@@ -19,21 +19,21 @@ const posts = (await getCollection('writings')).sort(
         ))}
     </div>
 ))}
-<style>
-  .tag {
-    background-color: var(--text);
-    color: var(--base);
-    margin-right: 1em;
-    padding: 1px 6px;
-    border: 2px solid var();
-    font-family: "Atkinson Hyperlegible Mono", monospace
-  }
-
+<style is:global>
   .post {
     background-color: var(--crust);
     border: 2px solid var(--blue);
     padding: 1em;
+		margin-bottom: 1em;
     line-height: 2em;
+  }
+
+  .tag {
+    background-color: var(--text);
+    color: var(--base);
+    margin-right: 0.5em;
+    padding: 1px 6px;
+    font-family: "Atkinson Hyperlegible Mono", monospace;
   }
 </style>
 </Layout>

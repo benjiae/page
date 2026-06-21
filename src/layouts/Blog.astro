@@ -1,6 +1,17 @@
 ---
-const { frontmatter } = Astro.props;
 import "../styles/global.css";
 ---
 
 <slot />
+<style is:global>
+ @keyframes selected {
+		 from {
+				 color: var(--peach);
+		 } to {
+				 color: var(--text);
+		 }
+ }
+	li:has(sup > :target) {
+			animation: selected 5s
+	}
+</style>

@@ -13,5 +13,7 @@ const { Content } = await render(post);
 ---
 <Layout title={post.data.title} description={post.data.description}>
 <h1>{post.data.title}</h1>
+<p style="margin-top: -1em; color: var(--overlay0)">{post.data.description}</p>
 <Content />
 </Layout>
+
