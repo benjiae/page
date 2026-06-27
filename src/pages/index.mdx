@@ -8,6 +8,8 @@ import Buttons from '@components/Buttons.astro'
 import Button from '@components/ButtonImg.astro'
 import FediRing from '@components/FediRing.astro'
 import TouhouWebring from '@components/TouhouWebring.astro'
+import { Picture } from 'astro:assets'
+import Niko from '../assets/niko.png'
 
 # Hello!! <Waving />
 ## Welcome!
@@ -16,7 +18,7 @@ Welcome to my site! i'm [benjae](#about), and this is the product of me brutefor
 ## about me!!!
 As the text above says, a random [guy](https://pronouns.cc/@benjae) on the internet that likes some stuff, such as:
 <div style="display: flex; flex-direction: row; gap: 1em;">
-    <img src="/assets/images/niko.webp" width="128" height="128" alt="Niko from oneshot, a human-like figure with cat ears, purple hair, blue scarf and a brown overcoat putting a green hat on themselves"><br /></img> 
+    <Picture src={Niko} formats={["webp", "png"]} width="128" height="128" alt="Niko from oneshot, a human-like figure with cat ears, purple hair, blue scarf and a brown overcoat putting a green hat on themselves" /><br /> 
     - Niko from OneShot!! (the thing on the left) they're so cool ~~i wish i looked like that~~ (art by [Argon](https://bsky.app/profile/argoncrystal.bsky.social/post/3ltxbfyagik2d)!)
     - Playing games sometimes idk, i [speedran some stuff](https://www.speedrun.com/users/benjae) and have like 199 berries in Celeste), i play rhythm games too sometimes (including iidx and bms)
     - Doing stuff with computers! (most of the time) that's how this site was made afterall
