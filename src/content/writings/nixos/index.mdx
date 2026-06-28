@@ -24,11 +24,16 @@ To prepare this install, breaady helped me with my struggles (such as setting up
 This section is for me to mention some issues I had that could be common-ish enough for others to also struggle with:
 
 Besides the aforementioned Vesktop issue (where you can see the solution [here](https://codeberg.org/benjae/nix-config/src/branch/main/config/desktop/social.nix)), I also had these issues:
-- Nix rebuild freezes when fetching cargo crates: this issue disappeared when I disabled lix from my config, which is weird but at least this doesn't happen anymore.
-- OBS not having nvenc / enabling CUDA: this could very easily be fixed by reading the wiki, but this also got me to enable cuda system wide[^1], and it's _very_ important to also enable the binary cache (remember that you need to rebuild at least once for it to work!)
-- Properly theming KDE applications: For this, I had to build the equivalent of the AUR's [qt6ct-kde](https://aur.archlinux.org/packages/qt6ct-kde) as an override for qt6ct, you can find an example [here](https://codeberg.org/benjae/nix-config/src/commit/a0b6dff12447efb96352ac71a65a3d99e6e76f7d/config/desktop/niri.nix#L37).
-- Dolphin doesn't have an application menu: this is also an issue in Arch, but on NixOS there's another solution, the [wiki](https://wiki.nixos.org/wiki/Dolphin) mentions an overlay you could use, but as of this post's writing it's broken[^2] so i'm using MattiDragon's fork of the overlay, and to fix it you just enable the overlay and install dolphin! way easier than searching 4 arch forum posts 5 reddit posts and 3 github issues for a proper fix.
-- Using dolphin as a file picker: I got this to work by using the following snippet: (the important line is the `FileChooser` one but not specifying the other ones _might_ lead to your system just not using the other desktop portals)
+### Nix rebuild freezes when fetching cargo crates
+this issue disappeared when I disabled lix from my config, which is weird but at least this doesn't happen anymore.
+### OBS not having nvenc / enabling CUDA
+this could very easily be fixed by reading the wiki, but this also got me to enable cuda system wide[^1], and it's _very_ important to also enable the binary cache (remember that you need to rebuild at least once for it to work!)
+### Properly theming KDE applications
+For this, I had to build the equivalent of the AUR's [qt6ct-kde](https://aur.archlinux.org/packages/qt6ct-kde) as an override for qt6ct, you can find an example [here](https://codeberg.org/benjae/nix-config/src/commit/a0b6dff12447efb96352ac71a65a3d99e6e76f7d/config/desktop/niri.nix#L37).
+### Dolphin doesn't have an application menu
+this is also an issue in Arch, but on NixOS there's another solution, the [wiki](https://wiki.nixos.org/wiki/Dolphin) mentions an overlay you could use, but as of this post's writing it's broken[^2] so i'm using MattiDragon's fork of the overlay, and to fix it you just enable the overlay!
+### Using dolphin as a file picker
+I got this to work by using the following snippet: (the important line is the `FileChooser` one but not specifying the other ones _might_ lead to your system just not using the other desktop portals)
 ``` nix
 xdg.portal = {
 	config.niri = {
