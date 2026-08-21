@@ -7,22 +7,28 @@ import Waving from '@components/Waving.astro'
 import Buttons from '@components/Buttons.astro'
 import Button from '@components/ButtonImg.astro'
 import FediRing from '@components/FediRing.astro'
+import ProtogenRing from '@components/ProtogenRing.astro'
 import TouhouWebring from '@components/TouhouWebring.astro'
 import { Picture } from 'astro:assets'
-import Niko from '../assets/niko.png'
+import Protomoji from '../assets/protomoji.png'
 
 # Hello!! <Waving />
 ## Welcome!
-Welcome to my site! i'm [benjae](#about), and this is the product of me bruteforcing css over and over again \
+Welcome to my site! i'm benjae, and this is the product of me bruteforcing css over and over again. It's beautiful isn't it? \
 Check out the [Gemini capsule](gemini://sillydomain.name)!
 
 ## about me!!!
-As the text above says, a random [guy](https://pronouns.cc/@benjae) on the internet that likes some stuff, such as:
-<div style="display: flex; flex-direction: row; gap: 1em;">
-    <Picture src={Niko} formats={["webp", "png"]} width="128" height="128" alt="Niko from oneshot, a human-like figure with cat ears, purple hair, blue scarf and a brown overcoat putting a green hat on themselves" /><br /> 
-    - Niko from OneShot!! (the thing on the left) they're so cool ~~i wish i looked like that~~ (art by [Argon](https://bsky.app/profile/argoncrystal.bsky.social/post/3ltxbfyagik2d)!)
+As the text above says, I'm a random [guy](https://pronouns.cc/@benjae) on the internet that likes some stuff, such as:
+<div style="display: grid; grid-template-columns: 150px auto">
+	<div id="picture">
+    <Picture src={Protomoji} formats={["webp", "png"]} width="128" height="128" alt="The head of a blue protogen (furry species with a visor) that's currently sleepy, there's a big blue tail with a lighter end that covers about half its body" /><br /> 
+	<small>this is actually me ngl<br />(protomojis by [pquirrel](https://codeberg.org/pquirrel/protomoji)!)</small>
+	</div>
+	<div id="description">
+    - Niko from OneShot!! they're so cool ~~i wish i looked like them~~ 
     - Playing games sometimes idk, i [speedran some stuff](https://www.speedrun.com/users/benjae) and have like 199 berries in Celeste), i play rhythm games too sometimes (including iidx and bms)
     - Doing stuff with computers! (most of the time) that's how this site was made afterall
+	</div>
 </div>
 
 ## Buttons!
@@ -36,8 +42,13 @@ Contrary to popular belief, i do exist! you can:
 - Find me on social media! such as [the Fediverse](https://merping.synth.download/@benjae) and [Bluesky](https://bsky.app/profile/sillydomain.name).
 - Find more specific stuff about me on places such as [Listenbrainz](https://listenbrainz.org/user/), [Bokutachi](https://boku.tachi.ac/u/benjae) and [Steam](https://steamcommunity.com/id/gentoo-linux).
 
-## Webrings! <small><a href="#webrings">#</a></small>
-<div id="wr" style="display: flex; gap: 1em; justify-content: space-around">
-<TouhouWebring />
-<FediRing />
+## Webrings!
+<div id="wr" style="display: grid; grid-template-columns: 132px 300px; gap: 8px">
+	<div id="wr-huge">
+		<TouhouWebring />
+	</div>
+	<div id="wr-template">
+		<FediRing />
+		<ProtogenRing /> {/* Breo by Jax! https://hiijax.net/ */}
+	</div>
 </div>
