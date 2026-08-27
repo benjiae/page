@@ -26,7 +26,7 @@ body {
 
 #main {
     background-color: var(--mantle);
-    border: 2px var(--lavender) solid;
+    border: 2px var(--accent) solid;
     padding-left: 1em;
     padding-bottom: 1em;
     margin-bottom: 1em;
