@@ -80,13 +80,13 @@
 		"alt": "pquirrel"
 	},
 	{
+		"href": "https://hiijax.net",
+		"img": "https://hiijax.net/buttons/hiijax.gif",
+		"alt": "hiijax"
+	},
+	{
 		"href": "https://juxgd.codeberg.page",
 		"img": "https://juxgd.codeberg.page/badges/jux.apng",
 		"alt": "jux"
-	},
-	{
-		"href": "https://cosyivy.xyz",
-		"img": "https://sillyivy.nekoweb.org/button.gif",
-		"alt": "cosyivy"
 	}
 ]
