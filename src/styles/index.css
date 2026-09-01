@@ -1,0 +1,55 @@
+@keyframes boop {
+  from {
+    transform: scale(1.1);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+#eepy:hover {
+  content: url("/assets/images/protomoji_boop_sleepy.webp")
+}
+
+#eepy:active {
+  content: url("/assets/images/protomoji_boop_blush_soft.webp");
+  animation: boop 0.2s
+}
+
+
+#intro {
+  display: grid;
+  grid-template-areas:
+    "picture"
+    "description";
+}
+
+#intro>#picture {
+  grid-area: picture;
+}
+
+#intro>#description {
+  grid-area: description;
+}
+
+@media (orientation: landscape) {
+  #intro {
+    grid-template-areas:
+      "picture description"
+  }
+}
+
+@media (orientation: portrait) {
+  #intro>#picture {
+    display: inline-grid;
+    justify-items: center;
+    align-items: center;
+  }
+
+  #intro {
+    grid-template-areas:
+      "description"
+      "picture"
+  }
+}
