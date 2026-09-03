@@ -1,0 +1,44 @@
+<li id="lb-text" style="display: none;"></li>
+
+<script>
+const LB_URL = "https://api.listenbrainz.org";
+const LB_NAME = "benjae";
+const LB_API = `${LB_URL}/1/user/${LB_NAME}/playing-now`;
+
+async function get_lb(url: string) {
+  try { // from https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
+    const response = await fetch(url);
+    if (!response.ok) {
+      return 1;
+    }
+    const result = await response.json()
+    if (result["payload"]["listens"].length == 0) {
+      return "nothing...";
+    } else {
+      const song = result["payload"]["listens"][0]["track_metadata"]["track_name"];
+      const artist = result["payload"]["listens"][0]["track_metadata"]["artist_name"];
+      return `${song}, by ${artist}!`;
+    }
+  } catch (error) {
+    return 2;
+  }
+}
+
+let lbText = document.getElementById("lb-text");
+if (lbText != null) {
+  lbText.style = "";
+  lbText.innerText = "Fetching listenbrainz..."
+  let song = await get_lb(LB_API);
+  switch (song) {
+    case 1:
+      lbText.innerText = "Fetch failed, check console";
+      break;
+    case 2:
+      lbText.innerText = "Something failed, check console and dm me";
+      break;
+    default:
+      lbText.innerHTML = `I'm currently listening to ${song}`;
+      break;
+  }
+}
+</script>
