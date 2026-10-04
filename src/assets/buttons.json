@@ -35,6 +35,16 @@
 		"alt": "gray"
 	},
 	{
+		"href": "https://nixwiz.network",
+		"img": "https://nixwiz.network/share/image/button.gif",
+		"alt": "nixwiz network"
+	},
+	{
+		"href": "https://meowing.zip",
+		"img": "https://meowing.zip/assets/88x31/button.png",
+		"alt": "meowing.zip"
+	},
+	{
 		"href": "https://jade-ish.nekoweb.org",
 		"img": "https://jade-ish.nekoweb.org/88x31.gif",
 		"alt": "jade"

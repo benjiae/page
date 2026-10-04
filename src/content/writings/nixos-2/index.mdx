@@ -1,0 +1,32 @@
+---
+layout: ../../../layouts/Blog.astro
+title: "nixos... part 2!"
+description: "waow"
+tags: ["life", "code"]
+pubDate: 10/3/26 22:45
+---
+## Introduction
+heyyy im back
+
+it's been 3-4 months(?? wtf) since i decided to main nixos, and yeah it's been an Experience to say the least, i really didn't expect this to last that long asdfhj. \
+To revive this section again im just gonna explain what im running rn, here's a link to [my flake](https://codeberg.org/benjae/nix-flake) and [dotfiles](https://codeberg.org/benjae/dotfiles) if you care about those, and i'm also gonna talk about stuff i had to "fight".
+
+## Setup
+So, I'm currently running:
+- ly as my display manager, it's comfy and that way i skip a display mode change so i actually get to see my computer boot entirely
+- sway as my window manager of choice, [urayde's niri fork](https://github.com/urayde/niri) took a while to compile and the repo just has a sus feeling to it idk asdfhjk, but it worked well!
+- gaypanel as my bar of choice, it's made by oomf so it's automatically good /j (nah but seriously it's a great bar, haven't had any big issues yet)
+- swaync as my notification daemon of choice, it's just the best i could find tbh, but i could try other stuff
+- walker for my app launcher, it's pretty comfy :3
+You may ask "Why stop using noctalia?" well i just felt like it, + that way i could try other software without ditching my entire setup
+- and yes i still use stow to manage my dotfiles
+
+## Hurdles
+At some point between these months i decided to [try dendritic with juuust a bit of home-manager sprinkled in](https://codeberg.org/benjae/nix-config/src/branch/previous), however i decided against that a few days later as my previous setup was essentially modular already (`config` and `lib.mkIf` my beloved) and saw that dendritic was kinda,, Hated in the nixos discord server. \
+And uuh another issue i had was the whole setting up for dev situation, i previously just installed language servers and stuff globally but as i wanted to strip my installation size a bit more i decided to properly start using devshells and whatnot, breaady (which i have mentioned before) has told me about wrapping a code editor with commonly used stuff! so i did that with [helix](https://codeberg.org/benjae/nix-config/src/branch/main/packages/helix.nix) (second part [here](https://codeberg.org/benjae/nix-config/src/branch/main/config/common/packages.nix#L6)) and yeah it's been working pretty well :3 \
+direnv has also been really useful, as i can just add `use flake (directory)` to automatically use a local flake with a development shell to xyz, including this site! that way i don't clutter everything with a boilerplate flake.nix
+
+## End
+and uuh yeah that's it lol \
+just wanted to give a quick update on the last post, as it became outdated pretty quickly \
+baiii see y'all in like 3 months from now :3
